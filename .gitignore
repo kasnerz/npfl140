@@ -1,0 +1,5 @@
+npfl140
+.vscode
+.venv
+pyrightconfig.json
+pygraphviz
