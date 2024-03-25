@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 19.1461,
+        "lat": 47.4814
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.93,
+        "feels_like": 28.07,
+        "temp_min": 28.62,
+        "temp_max": 31.31,
+        "pressure": 1019,
+        "humidity": 34
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276553,
+    "sys": {
+        "type": 2,
+        "id": 2009313,
+        "country": "HU",
+        "sunrise": 1694232734,
+        "sunset": 1694279399
+    },
+    "timezone": 7200,
+    "id": 7284834,
+    "name": "Budapest X. keruelet",
+    "cod": 200
+}

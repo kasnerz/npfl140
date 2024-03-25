@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 116.4121,
+        "lat": 40.1906
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.99,
+        "feels_like": 20.66,
+        "temp_min": 19.99,
+        "temp_max": 19.99,
+        "pressure": 1013,
+        "humidity": 100
+    },
+    "visibility": 6000,
+    "wind": {
+        "speed": 1,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1694276549,
+    "sys": {
+        "type": 1,
+        "id": 9609,
+        "country": "CN",
+        "sunrise": 1694296190,
+        "sunset": 1694342024
+    },
+    "timezone": 28800,
+    "id": 2038154,
+    "name": "Changping",
+    "cod": 200
+}

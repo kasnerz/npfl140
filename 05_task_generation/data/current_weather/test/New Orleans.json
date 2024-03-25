@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -90.0782,
+        "lat": 29.976
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.49,
+        "feels_like": 32.25,
+        "temp_min": 27.78,
+        "temp_max": 31.67,
+        "pressure": 1014,
+        "humidity": 62
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 70
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276578,
+    "sys": {
+        "type": 2,
+        "id": 2008292,
+        "country": "US",
+        "sunrise": 1694259701,
+        "sunset": 1694304847
+    },
+    "timezone": -18000,
+    "id": 4335045,
+    "name": "New Orleans",
+    "cod": 200
+}

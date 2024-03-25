@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 24.9427,
+        "lat": 60.1675
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 16.15,
+        "feels_like": 16.09,
+        "temp_min": 15.43,
+        "temp_max": 16.86,
+        "pressure": 1017,
+        "humidity": 87
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 190
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276565,
+    "sys": {
+        "type": 2,
+        "id": 2011913,
+        "country": "FI",
+        "sunrise": 1694230364,
+        "sunset": 1694278987
+    },
+    "timezone": 10800,
+    "id": 658225,
+    "name": "Helsinki",
+    "cod": 200
+}

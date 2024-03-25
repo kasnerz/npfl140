@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -58.4371,
+        "lat": -34.6076
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 18.74,
+        "feels_like": 17.87,
+        "temp_min": 17.83,
+        "temp_max": 19.94,
+        "pressure": 1019,
+        "humidity": 46,
+        "sea_level": 1019,
+        "grnd_level": 1015
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.1,
+        "deg": 5,
+        "gust": 2.99
+    },
+    "clouds": {
+        "all": 67
+    },
+    "dt": 1694276289,
+    "sys": {
+        "type": 2,
+        "id": 2008409,
+        "country": "AR",
+        "sunrise": 1694253731,
+        "sunset": 1694295632
+    },
+    "timezone": -10800,
+    "id": 3427458,
+    "name": "Villa Crespo",
+    "cod": 200
+}

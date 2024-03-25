@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -86.7743,
+        "lat": 36.1623
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 25.87,
+        "feels_like": 26.29,
+        "temp_min": 23.84,
+        "temp_max": 27.97,
+        "pressure": 1018,
+        "humidity": 68
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 350
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1694276578,
+    "sys": {
+        "type": 1,
+        "id": 3477,
+        "country": "US",
+        "sunrise": 1694258692,
+        "sunset": 1694304270
+    },
+    "timezone": -18000,
+    "id": 4617305,
+    "name": "Davidson",
+    "cod": 200
+}

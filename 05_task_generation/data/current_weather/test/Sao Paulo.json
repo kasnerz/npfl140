@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -46.6334,
+        "lat": -23.5507
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.11,
+        "feels_like": 26.11,
+        "temp_min": 25.15,
+        "temp_max": 26.88,
+        "pressure": 1022,
+        "humidity": 58
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 290
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276409,
+    "sys": {
+        "type": 2,
+        "id": 2082654,
+        "country": "BR",
+        "sunrise": 1694250596,
+        "sunset": 1694293103
+    },
+    "timezone": -10800,
+    "id": 3458611,
+    "name": "Liberdade",
+    "cod": 200
+}

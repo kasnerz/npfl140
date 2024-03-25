@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 29.0525,
+        "lat": 41.0766
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.01,
+        "feels_like": 23.95,
+        "temp_min": 23.61,
+        "temp_max": 24.19,
+        "pressure": 1015,
+        "humidity": 57,
+        "sea_level": 1015,
+        "grnd_level": 1015
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.66,
+        "deg": 49,
+        "gust": 10.65
+    },
+    "clouds": {
+        "all": 3
+    },
+    "dt": 1694276567,
+    "sys": {
+        "type": 1,
+        "id": 6970,
+        "country": "TR",
+        "sunrise": 1694230675,
+        "sunset": 1694276704
+    },
+    "timezone": 10800,
+    "id": 739549,
+    "name": "\u015ei\u015fli",
+    "cod": 200
+}

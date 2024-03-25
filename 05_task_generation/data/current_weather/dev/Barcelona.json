@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 2.1774,
+        "lat": 41.3829
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.39,
+        "feels_like": 26.39,
+        "temp_min": 24.82,
+        "temp_max": 30.57,
+        "pressure": 1017,
+        "humidity": 68
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 130
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276549,
+    "sys": {
+        "type": 2,
+        "id": 2003688,
+        "country": "ES",
+        "sunrise": 1694237116,
+        "sunset": 1694283160
+    },
+    "timezone": 7200,
+    "id": 3119123,
+    "name": "Sant Pere, Santa Caterina i La Ribera",
+    "cod": 200
+}

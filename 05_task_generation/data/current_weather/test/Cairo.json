@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 31.2357,
+        "lat": 30.0444
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 35.33,
+        "feels_like": 34.73,
+        "temp_min": 35.14,
+        "temp_max": 35.33,
+        "pressure": 1009,
+        "humidity": 28
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 10
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276554,
+    "sys": {
+        "type": 1,
+        "id": 2514,
+        "country": "EG",
+        "sunrise": 1694230572,
+        "sunset": 1694275759
+    },
+    "timezone": 10800,
+    "id": 7922173,
+    "name": "Al \u2018Atabah",
+    "cod": 200
+}

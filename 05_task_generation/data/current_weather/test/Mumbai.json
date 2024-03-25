@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 72.8281,
+        "lat": 18.9734
+    },
+    "weather": [
+        {
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.01,
+        "feels_like": 36.01,
+        "temp_min": 29.01,
+        "temp_max": 29.01,
+        "pressure": 1006,
+        "humidity": 89
+    },
+    "visibility": 3000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 280
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276577,
+    "sys": {
+        "type": 1,
+        "id": 9052,
+        "country": "IN",
+        "sunrise": 1694220918,
+        "sunset": 1694265454
+    },
+    "timezone": 19800,
+    "id": 1274166,
+    "name": "Chinchpokli",
+    "cod": 200
+}

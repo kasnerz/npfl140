@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 34.7818,
+        "lat": 32.0853
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.23,
+        "feels_like": 31.26,
+        "temp_min": 28.01,
+        "temp_max": 29.52,
+        "pressure": 1010,
+        "humidity": 71
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 290
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276590,
+    "sys": {
+        "type": 1,
+        "id": 6845,
+        "country": "IL",
+        "sunrise": 1694229652,
+        "sunset": 1694274978
+    },
+    "timezone": 10800,
+    "id": 293397,
+    "name": "Tel Aviv",
+    "cod": 200
+}

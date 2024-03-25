@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 8.541,
+        "lat": 47.3744
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.47,
+        "feels_like": 30.57,
+        "temp_min": 28.5,
+        "temp_max": 30.44,
+        "pressure": 1017,
+        "humidity": 52
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.03,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276469,
+    "sys": {
+        "type": 2,
+        "id": 2004824,
+        "country": "CH",
+        "sunrise": 1694235287,
+        "sunset": 1694281935
+    },
+    "timezone": 7200,
+    "id": 6295493,
+    "name": "Z\u00fcrich (Kreis 1) / Lindenhof",
+    "cod": 200
+}

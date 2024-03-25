@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 6.7763,
+        "lat": 51.2254
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 30.06,
+        "feels_like": 30.26,
+        "temp_min": 27.15,
+        "temp_max": 32.25,
+        "pressure": 1016,
+        "humidity": 44
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.68,
+        "deg": 315,
+        "gust": 4.02
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276561,
+    "sys": {
+        "type": 2,
+        "id": 2019396,
+        "country": "DE",
+        "sunrise": 1694235478,
+        "sunset": 1694282591
+    },
+    "timezone": 7200,
+    "id": 2934246,
+    "name": "D\u00fcsseldorf",
+    "cod": 200
+}

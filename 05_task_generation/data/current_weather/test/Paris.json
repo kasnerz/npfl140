@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 2.32,
+        "lat": 48.8589
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 34.33,
+        "feels_like": 34.12,
+        "temp_min": 32.41,
+        "temp_max": 35.68,
+        "pressure": 1014,
+        "humidity": 32
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 160
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276403,
+    "sys": {
+        "type": 2,
+        "id": 2012208,
+        "country": "FR",
+        "sunrise": 1694236696,
+        "sunset": 1694283511
+    },
+    "timezone": 7200,
+    "id": 6545270,
+    "name": "Palais-Royal",
+    "cod": 200
+}

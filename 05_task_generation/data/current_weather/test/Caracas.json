@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -66.9146,
+        "lat": 10.5061
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.3,
+        "feels_like": 31.72,
+        "temp_min": 25.34,
+        "temp_max": 29.78,
+        "pressure": 1016,
+        "humidity": 61
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.68,
+        "deg": 99,
+        "gust": 4.47
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276555,
+    "sys": {
+        "type": 2,
+        "id": 52961,
+        "country": "VE",
+        "sunrise": 1694254673,
+        "sunset": 1694298759
+    },
+    "timezone": -14400,
+    "id": 3640847,
+    "name": "Distrito Capital",
+    "cod": 200
+}

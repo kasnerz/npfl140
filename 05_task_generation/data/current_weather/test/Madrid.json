@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -3.7036,
+        "lat": 40.4167
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.13,
+        "feels_like": 26.13,
+        "temp_min": 23.51,
+        "temp_max": 27.68,
+        "pressure": 1017,
+        "humidity": 52
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 160
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1694276385,
+    "sys": {
+        "type": 1,
+        "id": 6443,
+        "country": "ES",
+        "sunrise": 1694238571,
+        "sunset": 1694284527
+    },
+    "timezone": 7200,
+    "id": 6545083,
+    "name": "Sol",
+    "cod": 200
+}

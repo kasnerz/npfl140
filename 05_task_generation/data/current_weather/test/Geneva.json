@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 6.1466,
+        "lat": 46.2018
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 30.43,
+        "feels_like": 30.2,
+        "temp_min": 28.56,
+        "temp_max": 32.41,
+        "pressure": 1017,
+        "humidity": 40
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276562,
+    "sys": {
+        "type": 1,
+        "id": 6928,
+        "country": "CH",
+        "sunrise": 1694235927,
+        "sunset": 1694282444
+    },
+    "timezone": 7200,
+    "id": 2660646,
+    "name": "Geneva",
+    "cod": 200
+}

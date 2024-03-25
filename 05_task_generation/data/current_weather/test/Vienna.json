@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 16.3725,
+        "lat": 48.2084
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.14,
+        "feels_like": 28.25,
+        "temp_min": 26.6,
+        "temp_max": 29.26,
+        "pressure": 1019,
+        "humidity": 46
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276592,
+    "sys": {
+        "type": 2,
+        "id": 2037452,
+        "country": "AT",
+        "sunrise": 1694233359,
+        "sunset": 1694280105
+    },
+    "timezone": 7200,
+    "id": 2775260,
+    "name": "Innere Stadt",
+    "cod": 200
+}

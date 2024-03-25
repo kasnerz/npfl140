@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 46.716,
+        "lat": 24.6389
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 39.21,
+        "feels_like": 36.22,
+        "temp_min": 39.21,
+        "temp_max": 39.21,
+        "pressure": 1005,
+        "humidity": 10,
+        "sea_level": 1005,
+        "grnd_level": 942
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5.79,
+        "deg": 37,
+        "gust": 9.76
+    },
+    "clouds": {
+        "all": 1
+    },
+    "dt": 1694276582,
+    "sys": {
+        "type": 1,
+        "id": 7424,
+        "country": "SA",
+        "sunrise": 1694227025,
+        "sunset": 1694271877
+    },
+    "timezone": 10800,
+    "id": 448600,
+    "name": "Al Kh\u0101lid\u012byah",
+    "cod": 200
+}

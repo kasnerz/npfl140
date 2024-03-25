@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 30.5241,
+        "lat": 50.45
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 18.05,
+        "feels_like": 17.19,
+        "temp_min": 17.88,
+        "temp_max": 19.04,
+        "pressure": 1012,
+        "humidity": 49
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.01,
+        "deg": 45,
+        "gust": 5.28
+    },
+    "clouds": {
+        "all": 4
+    },
+    "dt": 1694276506,
+    "sys": {
+        "type": 2,
+        "id": 2003742,
+        "country": "UA",
+        "sunrise": 1694229823,
+        "sunset": 1694276850
+    },
+    "timezone": 10800,
+    "id": 696877,
+    "name": "Podil",
+    "cod": 200
+}

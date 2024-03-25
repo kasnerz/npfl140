@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 4.8925,
+        "lat": 52.3731
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 27.98,
+        "feels_like": 29.2,
+        "temp_min": 26.04,
+        "temp_max": 29.93,
+        "pressure": 1015,
+        "humidity": 58
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.34,
+        "deg": 153,
+        "gust": 2.24
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276545,
+    "sys": {
+        "type": 2,
+        "id": 2012552,
+        "country": "NL",
+        "sunrise": 1694235853,
+        "sunset": 1694283120
+    },
+    "timezone": 7200,
+    "id": 2759794,
+    "name": "Amsterdam",
+    "cod": 200
+}

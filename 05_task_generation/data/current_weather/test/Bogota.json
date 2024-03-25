@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -74.0836,
+        "lat": 4.653
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 18.99,
+        "feels_like": 18.3,
+        "temp_min": 18.99,
+        "temp_max": 18.99,
+        "pressure": 1028,
+        "humidity": 52
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6.69,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276551,
+    "sys": {
+        "type": 1,
+        "id": 8582,
+        "country": "CO",
+        "sunrise": 1694256530,
+        "sunset": 1694300342
+    },
+    "timezone": -18000,
+    "id": 3678413,
+    "name": "La Merced",
+    "cod": 200
+}

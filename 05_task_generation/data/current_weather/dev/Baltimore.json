@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -76.6108,
+        "lat": 39.2909
+    },
+    "weather": [
+        {
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.02,
+        "feels_like": 31.12,
+        "temp_min": 25.97,
+        "temp_max": 29.98,
+        "pressure": 1019,
+        "humidity": 73
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276548,
+    "sys": {
+        "type": 1,
+        "id": 3829,
+        "country": "US",
+        "sunrise": 1694256128,
+        "sunset": 1694301957
+    },
+    "timezone": -14400,
+    "id": 4347778,
+    "name": "Baltimore",
+    "cod": 200
+}

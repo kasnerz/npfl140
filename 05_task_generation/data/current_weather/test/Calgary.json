@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -114.0575,
+        "lat": 51.0456
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 14.32,
+        "feels_like": 13.64,
+        "temp_min": 11.93,
+        "temp_max": 16.36,
+        "pressure": 1020,
+        "humidity": 70
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 230
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276554,
+    "sys": {
+        "type": 2,
+        "id": 2011327,
+        "country": "CA",
+        "sunrise": 1694264521,
+        "sunset": 1694311534
+    },
+    "timezone": -21600,
+    "id": 5913490,
+    "name": "Calgary",
+    "cod": 200
+}

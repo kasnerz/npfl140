@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 44.3872,
+        "lat": 33.3062
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 37.97,
+        "feels_like": 35.85,
+        "temp_min": 37.97,
+        "temp_max": 37.97,
+        "pressure": 1004,
+        "humidity": 16
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 270
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276547,
+    "sys": {
+        "type": 1,
+        "id": 7597,
+        "country": "IQ",
+        "sunrise": 1694227303,
+        "sunset": 1694272718
+    },
+    "timezone": 10800,
+    "id": 98182,
+    "name": "Baghdad",
+    "cod": 200
+}

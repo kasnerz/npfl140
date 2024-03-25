@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 114.1628,
+        "lat": 22.2793
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.57,
+        "feels_like": 26.57,
+        "temp_min": 26.39,
+        "temp_max": 26.77,
+        "pressure": 1008,
+        "humidity": 89
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.15,
+        "deg": 120
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1694276420,
+    "sys": {
+        "type": 2,
+        "id": 47808,
+        "country": "HK",
+        "sunrise": 1694297320,
+        "sunset": 1694341974
+    },
+    "timezone": 28800,
+    "id": 8223932,
+    "name": "City of Victoria",
+    "cod": 200
+}

@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": 174.5506,
+        "lat": -36.5413
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 12.43,
+        "feels_like": 11.92,
+        "temp_min": 8.86,
+        "temp_max": 12.73,
+        "pressure": 1029,
+        "humidity": 84,
+        "sea_level": 1029,
+        "grnd_level": 1020
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.36,
+        "deg": 77,
+        "gust": 6.14
+    },
+    "clouds": {
+        "all": 96
+    },
+    "dt": 1694276546,
+    "sys": {
+        "type": 2,
+        "id": 2001909,
+        "country": "NZ",
+        "sunrise": 1694284243,
+        "sunset": 1694326072
+    },
+    "timezone": 43200,
+    "id": 2187942,
+    "name": "Makarau",
+    "cod": 200
+}

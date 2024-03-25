@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 80.2702,
+        "lat": 13.0837
+    },
+    "weather": [
+        {
+            "id": 701,
+            "main": "Mist",
+            "description": "mist",
+            "icon": "50n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.89,
+        "feels_like": 35.75,
+        "temp_min": 28.89,
+        "temp_max": 30.01,
+        "pressure": 1010,
+        "humidity": 86
+    },
+    "visibility": 5000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 190
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1694276556,
+    "sys": {
+        "type": 2,
+        "id": 2012809,
+        "country": "IN",
+        "sunrise": 1694219286,
+        "sunset": 1694263515
+    },
+    "timezone": 19800,
+    "id": 1465730,
+    "name": "Park Town",
+    "cod": 200
+}

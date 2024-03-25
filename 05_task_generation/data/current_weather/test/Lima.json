@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -77.0365,
+        "lat": -12.0621
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 21.73,
+        "feels_like": 21.86,
+        "temp_min": 19.26,
+        "temp_max": 21.73,
+        "pressure": 989,
+        "humidity": 73
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 190
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1694276570,
+    "sys": {
+        "type": 2,
+        "id": 2037860,
+        "country": "PE",
+        "sunrise": 1694257615,
+        "sunset": 1694300674
+    },
+    "timezone": -18000,
+    "id": 3930376,
+    "name": "R\u00edmac",
+    "cod": 200
+}

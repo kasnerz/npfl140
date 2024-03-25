@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 37.6064,
+        "lat": 55.6256
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 14.97,
+        "feels_like": 14.4,
+        "temp_min": 14.55,
+        "temp_max": 15.14,
+        "pressure": 1022,
+        "humidity": 72
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3,
+        "deg": 340
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1694276576,
+    "sys": {
+        "type": 2,
+        "id": 2000314,
+        "country": "RU",
+        "sunrise": 1694227746,
+        "sunset": 1694275528
+    },
+    "timezone": 10800,
+    "id": 472732,
+    "name": "Nagornyy",
+    "cod": 200
+}

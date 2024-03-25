@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 23.7348,
+        "lat": 37.9756
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.95,
+        "feels_like": 24.83,
+        "temp_min": 22.49,
+        "temp_max": 26.15,
+        "pressure": 1013,
+        "humidity": 51
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.2,
+        "deg": 30
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276545,
+    "sys": {
+        "type": 2,
+        "id": 2005332,
+        "country": "GR",
+        "sunrise": 1694232084,
+        "sunset": 1694277847
+    },
+    "timezone": 10800,
+    "id": 7648744,
+    "name": "Metaxourgio",
+    "cod": 200
+}

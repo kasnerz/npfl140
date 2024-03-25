@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 4.3517,
+        "lat": 50.8466
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 30.38,
+        "feels_like": 34.02,
+        "temp_min": 28.86,
+        "temp_max": 32.4,
+        "pressure": 1016,
+        "humidity": 62
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 100
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1694276552,
+    "sys": {
+        "type": 1,
+        "id": 1227,
+        "country": "BE",
+        "sunrise": 1694236085,
+        "sunset": 1694283147
+    },
+    "timezone": 7200,
+    "id": 2800865,
+    "name": "Arrondissement Brussel-Hoofdstad",
+    "cod": 200
+}

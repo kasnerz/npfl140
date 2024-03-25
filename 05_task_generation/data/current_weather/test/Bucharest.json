@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 26.1027,
+        "lat": 44.4361
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.05,
+        "feels_like": 27.18,
+        "temp_min": 27.02,
+        "temp_max": 29.34,
+        "pressure": 1013,
+        "humidity": 31
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 70
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1694276552,
+    "sys": {
+        "type": 2,
+        "id": 2037828,
+        "country": "RO",
+        "sunrise": 1694231225,
+        "sunset": 1694277570
+    },
+    "timezone": 10800,
+    "id": 676742,
+    "name": "Grefoaicele",
+    "cod": 200
+}
