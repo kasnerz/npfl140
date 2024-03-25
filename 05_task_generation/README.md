@@ -1,9 +1,10 @@
 # NPFL140 Assignment #1: Generating Weather Reports 🌦️
-In this assigment, you will try **generating weather reports** with open LLMs. 
+In this assigment, you **generate weather reports** with LLMs. 
+
+
+You will have access to multiple open models running on our in-house cluster via API.
 
 As an input, the system will use the JSONs from [OpenWeather.org](https://openweathermap.org/api) and your custom prompt.
-
-You will use the models running on our in-house cluster. You will have access to these models through an API.
 
 **Overview of your goals:**
 
@@ -13,25 +14,26 @@ You will use the models running on our in-house cluster. You will have access to
 4. Write the report describing your findings.
 5. Submit the report.
 
-**You should learn:**
+**In this assignment, you should learn:**
 - How to write a basic Python code querying a LLM through an OpenAI-like API.
 - How to set up a suitable prompt and parameters to get the expected output.
 - What are the opportunities and limits of recent open LLMs.
 
-Note that the assignment is pretty open-ended. We expect you to be creative and think and discuss about your findings ;) 
+Note that the assignment is pretty much open-ended. We expect you to be creative and discuss about your findings :wink:
 
 ## How to start
 
 ### Find a team
-It is strongly recommended that you find teammates for the assignment. Your team can have **up to 5 people**. 
+It is strongly recommended that you do this assignment in a team **up to 5 people**. 
 
-If you do not have any teammates for some reason (for example, you have not participated in the class), you can also submit the assignment on your own.
 
 As an ice-breaking / team-building activity, you should invent a name for your team (you will need to fill it later in the submission form).
 
+If you do not have any teammates for some reason (for example, you have not participated in the class), you can also submit the assignment on your own.
+
 ### Run the code
 
-Clone or download this repository (https://github.com/kasnerz/npfl140) and navigate to the subfolder `05_task_generation`. Make sure you have Python 3 installed on your system.
+Clone or download this repository (`git clone https://github.com/kasnerz/npfl140`) and navigate to the subfolder `05_task_generation`. Make sure you have Python 3 installed on your system.
 
 For starters, try running the code:
 ```
@@ -49,17 +51,17 @@ If you have any issues with the code, please let us know: either in person (bett
 ### Accessing the data
 You can find the data in the `data` subfolder. The data for each task is divided into a `dev` / `test` set. 
 
-The idea is that you will tune your prompts and parameters on a subset of data (`dev`) and draw the conclusions based on another, "unseen" subset (`test`).
+The idea is that you will tune your prompts and parameters on the `dev` set and draw the conclusions based the `test` set.
 
-The `dev` set is rather small (10 inputs) so that you can do the experiments quickly.
+The `dev` set is rather small (10 inputs) so that you can iterate quickly.
 
 ### Evaluation
 
-In this task, the evaluation is mainly qualitative, we do not require that any quantitative evaluation yet.
+In this task, the evaluation is mainly qualitative.
 
-However, it could also be helpful to log your setup and outputs so that you can manually compare them.
+It can be helpful to log your setup and outputs so that you have a reference for your findings.
 
-You should also keep thinking about how would you evaluate the outputs in a more rigorous way.
+You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later).
 
 ## Models
 
@@ -82,8 +84,9 @@ Note that:
 - The instruction-tuned models (1, 3, 4) should be queried with the `chat/completions` endpoint, which makes sure that the input is appropriately formatted for each model. You can easily prompt these models with instructions in natural language.
 - The base model (2) should be queried with the `completions` endpoint.  The model is only pre-trained on the next token prediction, so you need to formulate your task with that in mind (kudos if you are able to do that!)
 
+An example of how to use both  API endpoints is included in the sample code.
 
-*(Please, do not use the API for anything else than this assignment).*
+*Please, do not use the API for anything else than this assignment.*
 
 
 ## Tasks
@@ -103,8 +106,6 @@ Generate a **description of the current weather** based on a JSON file retrieved
 
 Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You can find the files in `data/forecast`. 
 
-Note that by default, the data may be too long for the model.
-
 **Questions**:
 
 - Which qualities would you expect the weather forecast to have (i.e., how should the generated text  be evaluated)? 
@@ -116,8 +117,8 @@ Use the data from task #1 or #2 and generate the reports in non-English language
 
 **Questions**:
 - Do you observe a drop in quality compared to English? If yes, what problems do you observe?
-- Is the multilingual model (`aya-101`) better than the other models?
-- If you actually had to generate similar texts in the language you selected, how would you proceed?
+- How do the models compare on this task?
+- If you actually had to generate similar texts in the language you selected (in a practical scenario), would you proceed differently than in English?
 
 
 ### 🌈 Task #4: Generate stylized weather reports
