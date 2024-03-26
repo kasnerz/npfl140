@@ -5,6 +5,8 @@ import requests
 import argparse
 import json
 
+API_KEY = "npfl140"
+
 
 def load_data(task, split):
     # load all the JSON files in the `data/task/split` directory
@@ -25,7 +27,13 @@ def base_model_api(node, model_args, prompt):
     data = {"prompt": prompt, **model_args}
 
     response = requests.post(
-        API_URL, headers={"Content-Type": "application/json"}, json=data, verify=False
+        API_URL,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {API_KEY}",
+        },
+        json=data,
+        verify=False,
     )
     output_text = response.json()["choices"][0]["text"]
 
@@ -39,8 +47,15 @@ def instruct_model_api(node, model_args, prompt):
     data = {"mode": "instruct", "messages": messages, **model_args}
 
     response = requests.post(
-        API_URL, headers={"Content-Type": "application/json"}, json=data, verify=False
+        API_URL,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {API_KEY}",
+        },
+        json=data,
+        verify=False,
     )
+    breakpoint()
     output_text = response.json()["choices"][0]["message"]["content"]
 
     return output_text

@@ -19,7 +19,7 @@ As an input, the system will use the JSONs from [OpenWeather.org](https://openwe
 - How to set up a suitable prompt and parameters to get the expected output.
 - What are the opportunities and limits of recent open LLMs.
 
-Note that the assignment is pretty much open-ended. We expect you to be creative and discuss about your findings :wink:
+Note that the assignment is pretty much open-ended. We expect you to be creative and think about your findings :wink:
 
 ## How to start
 
@@ -44,24 +44,15 @@ The program should output a sample weather report from the model running on node
 > Currently in Amsterdam, the temperature is 27.98°C with a feels like temperature of 29.2°C. The pressure is 1015 hPa and the humidity is 58%. The wind is blowing at a speed of 1.34 m/s from the east with a gust of 2.24 m/s. The sky is clear with no clouds in sight. The visibility is excellent at 10,000 meters. The sun is currently rising at 6:58 AM and will set at 8:31 PM local time.
 
 
-The code is just a sample: you can modify the code however you wish.
+The code is just a sample: you can modify the code however you wish, move it to a Jupyter notebook, etc.
 
-If you have any issues with the code, please let us know: either in person (better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*.
+If you have any issues with the code, please let us know: either in person (better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*. You can also start an issue in this repository.
 
-### Accessing the data
-You can find the data in the `data` subfolder. The data for each task is divided into a `dev` / `test` set. 
+### Choose the data
+In the `data` subfolder, you can find pre-downloaded input data for 100 cities around the world. 
 
-The idea is that you will tune your prompts and parameters on the `dev` set and draw the conclusions based the `test` set.
+We recommend that you choose a small subset of the cities (5-20 inputs)  for each task as your development set so that you can iterate quickly.
 
-The `dev` set is rather small (10 inputs) so that you can iterate quickly.
-
-### Evaluation
-
-In this task, the evaluation is mainly qualitative.
-
-It can be helpful to log your setup and outputs so that you have a reference for your findings.
-
-You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later).
 
 ## Models
 
@@ -78,7 +69,7 @@ Currently running models:
 | 3           | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | large (13B), instruction-tuned, multilingual (101 languages) |
 
 
-For the full list of parameters you can use in the API calls, see https://github.com/oobabooga/text-generation-webui/blob/main/extensions/openai/typing.py.
+For the full list of parameters you can use in the API calls, see the [text-generation-webui wiki](https://github.com/oobabooga/text-generation-webui/wiki/03-%E2%80%90-Parameters-Tab#parameters-description) and the [GenerationOptions](https://github.com/oobabooga/text-generation-webui/blob/main/extensions/openai/typing.py#L8) class.
 
 Note that:
 - The instruction-tuned models (1, 3, 4) should be queried with the `chat/completions` endpoint, which makes sure that the input is appropriately formatted for each model. You can easily prompt these models with instructions in natural language.
@@ -97,10 +88,10 @@ Generate a **description of the current weather** based on a JSON file retrieved
 
 **Questions**:
 
-- Do the reports look the way you would expect? 
-- How can you improve the results with a better prompt?
-- What happens if you change the decoding algorithms (beam search, top-k, top-p, ...) and their parameters?
-- What differences between the models do you observe?
+- **1a)** Do the reports look the way you would expect? 
+- **1b)** How can you improve the results with a better prompt?
+- **1c)** How can you improve the results by varying decoding algorithms (beam search, top-k, top-p, ...) and their parameters?
+- **1d)** What differences between the models do you observe?
 
 ### 🌦️ Task #2: Generate a 5-day forecast
 
@@ -108,17 +99,18 @@ Generate a **5-day forecast** based on a JSON file retrieved from the [**forecas
 
 **Questions**:
 
-- Which qualities would you expect the weather forecast to have (i.e., how should the generated text  be evaluated)? 
-- Do the generated reports have these qualities? If not, what are the issues?
-- Can you improve the quality of the forecasts by removing certain fields from the input data?
+- **2a)** Which qualities would you expect the weather forecast to have (i.e., how should the generated text  be evaluated)? 
+- **2b)** Do the generated reports have these qualities? If not, what are the issues?
+- **2c)** Can you improve the quality of the forecasts by removing certain fields from the input data?
+- **2d)** Do the insights from 1b)-1d) apply for this task as well? 
 
 ### 🇺🇳 Task #3: Generate a weather report in another language
 Use the data from task #1 or #2 and generate the reports in non-English language(s) of your choice.
 
 **Questions**:
-- Do you observe a drop in quality compared to English? If yes, what problems do you observe?
-- How do the models compare on this task?
-- If you actually had to generate similar texts in the language you selected (in a practical scenario), would you proceed differently than in English?
+- **3a)** Do you observe a drop in quality compared to English? If yes, what problems do you observe?
+- **3b)** How do the models compare on this task?
+- **3c)** If you actually had to generate similar texts in the language you selected (in a practical scenario), would you proceed differently than in English?
 
 
 ### 🌈 Task #4: Generate stylized weather reports
@@ -130,42 +122,33 @@ Use the data from task #1 or #2 and generate the reports with a specific style o
 - ...
 
 **Questions:**
-- How do you need to modify the prompt to efficiently control the model?
-- Are the responses robustly following the style, or is there variance between outputs?
-- Is there a difference in quality of the outputs compared to the default setup?
+- **4a)** How do you need to modify the prompt to efficiently control the model?
+- **4b)** Are the responses robustly following the style, or is there variance between outputs?
+- **4c)** Is there a difference in quality of the outputs compared to the default setup?
 
+## Evaluation
 
+In this task, the evaluation is mainly qualitative.
+
+It may be helpful to log your setup and outputs so that you have a reference for your answers.
+
+You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later!).
 
 ## Submission
-To complete the assignment, you need to submit a PDF report via the following 👉️ **[Google Form](https://forms.gle/gpmEHNuQirmqhKcH8)** 👈️ until **11 April, 2024**.
+To complete the assignment, you need to submit a PDF report via the following 👉️ **[Google Form](https://forms.gle/gpmEHNuQirmqhKcH8)** 👈️ until **Friday 12 April, 2024**.
 
 The report should contain:
 - the name of your team and your team members,
-- the description of your outcomes (see the tasks below).
+- the answers to the questions.
 
-The most straightforward way to write the report is to answer the questions for each task in a **bullet-point format**. However,  you can also write **free-form text** as long as you answer to the outlined problems.
-
-Any additional experiments, interesting remarks or ideas are welcome! 
+The most straightforward way to write the report is to answer the questions for each task in a **bullet-point format**. However,  you can also write **free-form text** as long as you answer to the outlined problems. Any additional experiments, interesting remarks or ideas are welcome! 
 
 
-You only need to submit the form **once per team**.
+You only need to submit the form **once per team**. There are no formal restrictions on the format of the report (i.e. Google Docs is fine).
 
-There are no formal restrictions on the format of the report, i.e. Google Docs is fine, as long as it is a PDF file.
+We will provide you feedback on your responses in the following class on 18 April.
 
-## Extra tips
+## Extra links
 - OpenWeather API docs: https://openweathermap.org/api/
 - Prompting guide: https://www.promptingguide.ai
-- Best prompting practices from [Huggingface](https://huggingface.co/docs/transformers/main/tasks/prompting#best-practices-of-llm-prompting):
-  - When choosing the model to work with, the latest and most capable models are likely to perform better.
-  - Start with a simple and short prompt, and iterate from there. 
-  - Put the instructions at the beginning of the prompt, or at the very end. When working with large context, models apply various optimizations to prevent Attention complexity from scaling quadratically. This may make a model more attentive to the beginning or end of a prompt than the middle.
-  - Clearly separate instructions from the text they apply to - more on this in the next section.
-  Be specific and descriptive about the task and the desired outcome - its format, length, style, language, etc.
-  - Avoid ambiguous descriptions and instructions.
-  - Favor instructions that say “what to do” instead of those that say “what not to do”.
-  - “Lead” the output in the right direction by writing the first word (or even begin the first sentence for the model).
-  - Use advanced techniques like Few-shot prompting and Chain-of-thought
-  - Test your prompts with different models to assess their robustness.
-  - Version and track the performance of your prompts.
-
-
+- [Best prompting practices from Huggingface](https://huggingface.co/docs/transformers/main/tasks/prompting#best-practices-of-llm-prompting)
