@@ -63,10 +63,10 @@ Currently running models:
 
 | Node | Model                                                                                             | Released     | Max input size (tokens) | Description                                                  |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
-| 1    | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | Sep 27, 2023 | 8k                      | mid-size (7B), instruction-tuned                             |
-| 2    | [`mistralai/Mistral-7B-v0.1`](https://huggingface.co/mistralai/Mistral-7B-v0.1)                   | Sep 27, 2023 | 8k                      | mid-size (7B), base                                          |
-| 4    | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | 2k                      | small (2.7B), instruction-tuned                              |
-| 3    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | 1k                      | large (13B), instruction-tuned, multilingual (101 languages) |
+| 1    | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | Sep 27, 2023 | 8,192                   | mid-size (7B), instruction-tuned                             |
+| 2    | [`mistralai/Mistral-7B-v0.1`](https://huggingface.co/mistralai/Mistral-7B-v0.1)                   | Sep 27, 2023 | 8,192                   | mid-size (7B), base                                          |
+| 4    | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | 2,048                   | small (2.7B), instruction-tuned                              |
+| 3    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | 1,024                   | large (13B), instruction-tuned, multilingual (101 languages) |
 
 
 For the full list of parameters you can use in the API calls, see the [text-generation-webui wiki](https://github.com/oobabooga/text-generation-webui/wiki/03-%E2%80%90-Parameters-Tab#parameters-description) and the [GenerationOptions](https://github.com/oobabooga/text-generation-webui/blob/main/extensions/openai/typing.py#L8) class.
@@ -84,7 +84,7 @@ An example of how to use both  API endpoints is included in the sample code.
 
 
 ### ☀️ Task #1: Generate the current weather description
-Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You can find the input files in `data/current_weather`.
+Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You do not need to retrieve the data yourself - you can find the input files in `data/current_weather`.
 
 **Questions**:
 
@@ -95,7 +95,7 @@ Generate a **description of the current weather** based on a JSON file retrieved
 
 ### 🌦️ Task #2: Generate a 5-day forecast
 
-Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You can find the input files in `data/forecast`. 
+Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You do not need to retrieve the data yourself - you can find the input files in `data/forecast`. 
 
 **Careful:** *the 5-day forecast inputs will be probably too large for the models and may get truncated. Keep an eye on the input size for each model. You can use the `--forecast_pruning_factor` parameter to reduce the data resolution (originally every 3 hours).*
 
