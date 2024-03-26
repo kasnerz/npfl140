@@ -61,12 +61,12 @@ You can access LLMs running on our cluster through the API at `http://quest.ms.m
 
 Currently running models:
 
-| Node number | Model                                                                                             | Released     | Description                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------ |
-| 1           | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | Sep 27, 2023 | mid-size (7B), instruction-tuned                             |
-| 2           | [`mistralai/Mistral-7B-v0.1`](https://huggingface.co/mistralai/Mistral-7B-v0.1)                   | Sep 27, 2023 | mid-size (7B), base                                          |
-| 4           | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | small (2.7B), instruction-tuned                              |
-| 3           | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | large (13B), instruction-tuned, multilingual (101 languages) |
+| Node | Model                                                                                             | Released     | Max input size (tokens) | Description                                                  |
+| ---- | ------------------------------------------------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
+| 1    | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | Sep 27, 2023 | 8k                      | mid-size (7B), instruction-tuned                             |
+| 2    | [`mistralai/Mistral-7B-v0.1`](https://huggingface.co/mistralai/Mistral-7B-v0.1)                   | Sep 27, 2023 | 8k                      | mid-size (7B), base                                          |
+| 4    | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | 2k                      | small (2.7B), instruction-tuned                              |
+| 3    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | 1k                      | large (13B), instruction-tuned, multilingual (101 languages) |
 
 
 For the full list of parameters you can use in the API calls, see the [text-generation-webui wiki](https://github.com/oobabooga/text-generation-webui/wiki/03-%E2%80%90-Parameters-Tab#parameters-description) and the [GenerationOptions](https://github.com/oobabooga/text-generation-webui/blob/main/extensions/openai/typing.py#L8) class.
@@ -97,11 +97,13 @@ Generate a **description of the current weather** based on a JSON file retrieved
 
 Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You can find the input files in `data/forecast`. 
 
+**Careful:** *the 5-day forecast inputs will be probably too large for the models and may get truncated. Keep an eye on the input size for each model. You can use the `--forecast_pruning_factor` parameter to reduce the data resolution (originally every 3 hours).*
+
 **Questions**:
 
 - **2a)** Which qualities would you expect the weather forecast to have (i.e., how should the generated text  be evaluated)? 
 - **2b)** Do the generated reports have these qualities? If not, what are the issues?
-- **2c)** Can you improve the quality of the forecasts by removing certain fields from the input data?
+- **2c)** How does filtering data items or removing certain fields from the input data improve the output quality?
 - **2d)** Do the insights from 1b)-1d) apply for this task as well? 
 
 ### 🇺🇳 Task #3: Generate a weather report in another language
@@ -110,7 +112,7 @@ Use the data from task #1 or #2 and generate the reports in non-English language
 **Questions**:
 - **3a)** Do you observe a drop in quality compared to English? If yes, what problems do you observe?
 - **3b)** How do the models compare on this task?
-- **3c)** If you actually had to generate similar texts in the language you selected (in a practical scenario), would you proceed differently than in English?
+- **3c)** What would be your method of choice for generating weather forecasts in this language in a practical scenario?
 
 
 ### 🌈 Task #4: Generate stylized weather reports
