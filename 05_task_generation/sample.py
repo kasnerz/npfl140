@@ -8,13 +8,14 @@ import json
 API_KEY = "npfl140"
 
 
-def load_data(task, split):
-    # load all the JSON files in the `data/task/split` directory
-    # return a list of dictionaries
+def load_data(task):
     data = []
+    dir_path = os.path.join("data", task)
 
-    for filename in sorted(os.listdir(f"data/{task}/{split}")):
-        with open(f"data/{task}/{split}/{filename}") as f:
+    for filename in sorted(os.listdir(dir_path)):
+        file_path = os.path.join(dir_path, filename)
+
+        with open(file_path) as f:
             data.append(json.load(f))
 
     return data
@@ -55,8 +56,10 @@ def instruct_model_api(node, model_args, prompt):
         json=data,
         verify=False,
     )
-    breakpoint()
-    output_text = response.json()["choices"][0]["message"]["content"]
+    try:
+        output_text = response.json()["choices"][0]["message"]["content"]
+    except:
+        raise ValueError(response.json())
 
     return output_text
 
@@ -65,6 +68,7 @@ if __name__ == "__main__":
     # fmt: off
     parser = argparse.ArgumentParser()
     parser.add_argument("--node", "-n", help="Node number (see the instructions for details)", type=int, required=True) 
+    parser.add_argument("--task", help="Which data to use", type=str, choices=["current_weather", "forecast"], default="current_weather")
     parser.add_argument("--max_tokens", "-m", help="Maximum number of tokens to generate", type=int, default=300) 
     parser.add_argument("--seed", "-r", help="Seed for random number generator", type=int, default=42) 
     parser.add_argument("--temperature", "-t", help="Temperature parameter", type=float, default=1.0) 
@@ -75,37 +79,42 @@ if __name__ == "__main__":
     args = parser.parse_args()
     # fmt: on
 
-    data = load_data(task="current_weather", split="dev")
-    sample = data[0]
+    data = load_data(task=args.task)
 
-    city_name = sample["name"]
-    prompt = f"Write a one-paragraph weather report for {city_name} as of today based on the following data:\n{sample}\n"
+    for sample in data:
+        city_name = sample["name"]
+        # prompt = f"Write a one-paragraph weather report for {city_name} as of today based on the following data:\n{sample}\n"
+        prompt = f"Write a one-paragraph 5-day weather forecast for {city_name} as of today based on the following data:\n{sample}\n"
 
-    print("Prompt")
-    print("=" * 10)
-    print(prompt)
+        print("Prompt")
+        print("=" * 10)
+        print(prompt)
 
-    model_args = {
-        "max_tokens": args.max_tokens,
-        "num_beams": args.num_beams,
-        "temperature": args.temperature,
-        "top_p": args.top_p,
-        "top_k": args.top_k,
-        "do_sample": args.do_sample,
-        "seed": args.seed,
-    }
+        model_args = {
+            "max_tokens": args.max_tokens,
+            "num_beams": args.num_beams,
+            "temperature": args.temperature,
+            "top_p": args.top_p,
+            "top_k": args.top_k,
+            "do_sample": args.do_sample,
+            "seed": args.seed,
+        }
 
-    # base model
-    if args.node == 2:
-        output_text = base_model_api(
-            node=args.node, model_args=model_args, prompt=prompt
-        )
-    # instruction-tuned models
-    else:
-        output_text = instruct_model_api(
-            node=args.node, model_args=model_args, prompt=prompt
-        )
+        # base model
+        if args.node == 2:
+            output_text = base_model_api(
+                node=args.node, model_args=model_args, prompt=prompt
+            )
+        # instruction-tuned models
+        else:
+            output_text = instruct_model_api(
+                node=args.node, model_args=model_args, prompt=prompt
+            )
 
-    print("Model response")
-    print("=" * 15)
-    print(output_text)
+        print("Model response")
+        print("=" * 15)
+        print(output_text)
+
+        # remove to generate output for all samples
+        break
+

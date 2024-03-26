@@ -54,7 +54,7 @@ In the `data` subfolder, you can find pre-downloaded input data for 100 cities a
 We recommend that you choose a small subset of the cities (5-20 inputs)  for each task as your development set so that you can iterate quickly.
 
 
-## Models
+### Access the models
 
 You can access LLMs running on our cluster through the API at `http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}`. It is an OpenAI-compatible API provided by [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API).
 
@@ -84,7 +84,7 @@ An example of how to use both  API endpoints is included in the sample code.
 
 
 ### ☀️ Task #1: Generate the current weather description
-Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You can find the files in `data/current_weather`.
+Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You can find the input files in `data/current_weather`.
 
 **Questions**:
 
@@ -95,7 +95,7 @@ Generate a **description of the current weather** based on a JSON file retrieved
 
 ### 🌦️ Task #2: Generate a 5-day forecast
 
-Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You can find the files in `data/forecast`. 
+Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You can find the input files in `data/forecast`. 
 
 **Questions**:
 
@@ -122,8 +122,8 @@ Use the data from task #1 or #2 and generate the reports with a specific style o
 - ...
 
 **Questions:**
-- **4a)** How do you need to modify the prompt to efficiently control the model?
-- **4b)** Are the responses robustly following the style, or is there variance between outputs?
+- **4a)** How do you need to modify the prompt to generate stylized reports?
+- **4b)** Are the responses robustly following the style for every output? If not, can you make it more robust?
 - **4c)** Is there a difference in quality of the outputs compared to the default setup?
 
 ## Evaluation
