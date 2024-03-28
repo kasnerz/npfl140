@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -86.7743,
+        "lat": 36.1623
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 6.81,
+        "feels_like": 5.42,
+        "temp_min": 4.15,
+        "temp_max": 8.55,
+        "pressure": 1024,
+        "humidity": 63
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 360
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1711632340,
+    "sys": {
+        "type": 1,
+        "id": 3477,
+        "country": "US",
+        "sunrise": 1711625893,
+        "sunset": 1711670731
+    },
+    "timezone": -18000,
+    "id": 4644585,
+    "name": "Nashville",
+    "cod": 200
+}

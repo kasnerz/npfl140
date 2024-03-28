@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -83.7981,
+        "lat": 9.8695
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 22.71,
+        "feels_like": 23.18,
+        "temp_min": 21.23,
+        "temp_max": 23.18,
+        "pressure": 1018,
+        "humidity": 82,
+        "sea_level": 1018,
+        "grnd_level": 823
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.48,
+        "deg": 137,
+        "gust": 0.99
+    },
+    "clouds": {
+        "all": 6
+    },
+    "dt": 1711632346,
+    "sys": {
+        "type": 2,
+        "id": 2007848,
+        "country": "CR",
+        "sunrise": 1711625659,
+        "sunset": 1711669536
+    },
+    "timezone": -21600,
+    "id": 3622914,
+    "name": "Mata de Guineo",
+    "cod": 200
+}

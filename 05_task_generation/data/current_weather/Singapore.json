@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 103.8195,
+        "lat": 1.3571
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.74,
+        "feels_like": 33.06,
+        "temp_min": 28.65,
+        "temp_max": 28.82,
+        "pressure": 1010,
+        "humidity": 75
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 70
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1711632351,
+    "sys": {
+        "type": 2,
+        "id": 265582,
+        "country": "SG",
+        "sunrise": 1711580762,
+        "sunset": 1711624396
+    },
+    "timezone": 28800,
+    "id": 1880755,
+    "name": "Bright Hill Crescent",
+    "cod": 200
+}
