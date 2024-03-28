@@ -1,4 +1,9 @@
 # NPFL140 Assignment #1: Generating Weather Reports 🌦️
+
+- Deadline: **Friday 12 April, 2024**.
+- [Submission form](https://forms.gle/gpmEHNuQirmqhKcH8)
+---
+
 In this assigment, you **generate weather reports** with LLMs. 
 
 
