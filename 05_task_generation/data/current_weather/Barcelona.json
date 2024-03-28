@@ -5,38 +5,38 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 26.39,
-        "feels_like": 26.39,
-        "temp_min": 24.82,
-        "temp_max": 30.57,
-        "pressure": 1017,
-        "humidity": 68
+        "temp": 19.19,
+        "feels_like": 18.76,
+        "temp_min": 16.84,
+        "temp_max": 22.44,
+        "pressure": 1003,
+        "humidity": 61
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.12,
-        "deg": 130
+        "speed": 7.2,
+        "deg": 210
     },
     "clouds": {
-        "all": 0
+        "all": 20
     },
-    "dt": 1694276549,
+    "dt": 1711632093,
     "sys": {
         "type": 2,
         "id": 2003688,
         "country": "ES",
-        "sunrise": 1694237116,
-        "sunset": 1694283160
+        "sunrise": 1711604433,
+        "sunset": 1711649503
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 3119123,
     "name": "Sant Pere, Santa Caterina i La Ribera",
     "cod": 200

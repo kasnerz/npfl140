@@ -13,31 +13,30 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 28.18,
-        "feels_like": 27.82,
-        "temp_min": 27.7,
-        "temp_max": 29.6,
-        "pressure": 1018,
-        "humidity": 40
+        "temp": 14.88,
+        "feels_like": 13.31,
+        "temp_min": 12.74,
+        "temp_max": 16.93,
+        "pressure": 990,
+        "humidity": 34
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.47,
-        "deg": 62,
-        "gust": 4.02
+        "speed": 9.26,
+        "deg": 220
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1694276582,
+    "dt": 1711632343,
     "sys": {
         "type": 2,
         "id": 2010430,
         "country": "CZ",
-        "sunrise": 1694233714,
-        "sunset": 1694280686
+        "sunrise": 1711601215,
+        "sunset": 1711646845
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 3067696,
     "name": "Prague",
     "cod": 200

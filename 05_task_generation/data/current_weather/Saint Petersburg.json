@@ -1,43 +1,43 @@
 {
     "coord": {
-        "lon": 30.3162,
-        "lat": 59.9387
+        "lon": 30.1587,
+        "lat": 59.9607
     },
     "weather": [
         {
-            "id": 802,
-            "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 19.43,
-        "feels_like": 19.07,
-        "temp_min": 18.94,
-        "temp_max": 19.43,
-        "pressure": 1020,
-        "humidity": 63
+        "temp": 12.58,
+        "feels_like": 11.49,
+        "temp_min": 10.34,
+        "temp_max": 13.15,
+        "pressure": 1004,
+        "humidity": 61
     },
     "visibility": 10000,
     "wind": {
-        "speed": 1,
-        "deg": 0
+        "speed": 7,
+        "deg": 150
     },
     "clouds": {
-        "all": 40
+        "all": 0
     },
-    "dt": 1694276481,
+    "dt": 1711632345,
     "sys": {
         "type": 2,
-        "id": 197864,
+        "id": 2088446,
         "country": "RU",
-        "sunrise": 1694229096,
-        "sunset": 1694277676
+        "sunrise": 1711596953,
+        "sunset": 1711643555
     },
     "timezone": 10800,
-    "id": 519690,
-    "name": "Novaya Gollandiya",
+    "id": 537127,
+    "name": "Lakhtinskiy",
     "cod": 200
 }

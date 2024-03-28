@@ -5,38 +5,38 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01n"
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 35.33,
-        "feels_like": 34.73,
-        "temp_min": 35.14,
-        "temp_max": 35.33,
-        "pressure": 1009,
-        "humidity": 28
+        "temp": 32.33,
+        "feels_like": 30.05,
+        "temp_min": 31.81,
+        "temp_max": 32.33,
+        "pressure": 1014,
+        "humidity": 9
     },
-    "visibility": 10000,
+    "visibility": 6000,
     "wind": {
-        "speed": 5.14,
-        "deg": 10
+        "speed": 7.72,
+        "deg": 270
     },
     "clouds": {
-        "all": 0
+        "all": 100
     },
-    "dt": 1694276554,
+    "dt": 1711632313,
     "sys": {
         "type": 1,
         "id": 2514,
         "country": "EG",
-        "sunrise": 1694230572,
-        "sunset": 1694275759
+        "sunrise": 1711597731,
+        "sunset": 1711642260
     },
-    "timezone": 10800,
+    "timezone": 7200,
     "id": 7922173,
     "name": "Al \u2018Atabah",
     "cod": 200

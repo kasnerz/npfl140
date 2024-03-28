@@ -13,28 +13,28 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 26.11,
-        "feels_like": 26.11,
-        "temp_min": 25.15,
-        "temp_max": 26.88,
-        "pressure": 1022,
-        "humidity": 58
+        "temp": 20.1,
+        "feels_like": 20.52,
+        "temp_min": 19.69,
+        "temp_max": 20.55,
+        "pressure": 1024,
+        "humidity": 90
     },
-    "visibility": 10000,
+    "visibility": 5000,
     "wind": {
-        "speed": 4.12,
-        "deg": 290
+        "speed": 2.57,
+        "deg": 80
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1694276409,
+    "dt": 1711632347,
     "sys": {
-        "type": 2,
-        "id": 2082654,
+        "type": 1,
+        "id": 8394,
         "country": "BR",
-        "sunrise": 1694250596,
-        "sunset": 1694293103
+        "sunrise": 1711617198,
+        "sunset": 1711660162
     },
     "timezone": -10800,
     "id": 3458611,

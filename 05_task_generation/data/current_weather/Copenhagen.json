@@ -5,38 +5,39 @@
     },
     "weather": [
         {
-            "id": 802,
+            "id": 804,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 23.18,
-        "feels_like": 23.33,
-        "temp_min": 21.94,
-        "temp_max": 24.95,
-        "pressure": 1018,
-        "humidity": 68
+        "temp": 9,
+        "feels_like": 5.59,
+        "temp_min": 8.18,
+        "temp_max": 10.49,
+        "pressure": 981,
+        "humidity": 83
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.09,
-        "deg": 150
+        "speed": 7.22,
+        "deg": 160,
+        "gust": 12.45
     },
     "clouds": {
-        "all": 37
+        "all": 100
     },
-    "dt": 1694276557,
+    "dt": 1711632316,
     "sys": {
         "type": 2,
-        "id": 2035645,
+        "id": 2091609,
         "country": "DK",
-        "sunrise": 1694233758,
-        "sunset": 1694281531
+        "sunrise": 1711601411,
+        "sunset": 1711647538
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 6949461,
     "name": "Inner City",
     "cod": 200

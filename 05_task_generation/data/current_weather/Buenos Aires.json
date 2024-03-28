@@ -1,46 +1,44 @@
 {
     "coord": {
-        "lon": -58.4371,
-        "lat": -34.6076
+        "lon": -58.3815,
+        "lat": -34.6037
     },
     "weather": [
         {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 18.74,
-        "feels_like": 17.87,
-        "temp_min": 17.83,
-        "temp_max": 19.94,
+        "temp": 23.52,
+        "feels_like": 23.65,
+        "temp_min": 23.23,
+        "temp_max": 24.38,
         "pressure": 1019,
-        "humidity": 46,
-        "sea_level": 1019,
-        "grnd_level": 1015
+        "humidity": 66
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.1,
-        "deg": 5,
-        "gust": 2.99
+        "speed": 2.24,
+        "deg": 40,
+        "gust": 0
     },
     "clouds": {
-        "all": 67
+        "all": 0
     },
-    "dt": 1694276289,
+    "dt": 1711632312,
     "sys": {
-        "type": 2,
-        "id": 2008409,
+        "type": 1,
+        "id": 8224,
         "country": "AR",
-        "sunrise": 1694253731,
-        "sunset": 1694295632
+        "sunrise": 1711620191,
+        "sunset": 1711662807
     },
     "timezone": -10800,
-    "id": 3427458,
-    "name": "Villa Crespo",
+    "id": 6693229,
+    "name": "San Nicolas",
     "cod": 200
 }

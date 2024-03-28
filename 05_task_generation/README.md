@@ -41,7 +41,7 @@ python3 sample.py --node 1
 ```
 
 The program should output a sample weather report from the model running on node 1 (see below for details):
-> Currently in Amsterdam, the temperature is 27.98°C with a feels like temperature of 29.2°C. The pressure is 1015 hPa and the humidity is 58%. The wind is blowing at a speed of 1.34 m/s from the east with a gust of 2.24 m/s. The sky is clear with no clouds in sight. The visibility is excellent at 10,000 meters. The sun is currently rising at 6:58 AM and will set at 8:31 PM local time.
+> Currently in Amsterdam, the temperature is 11.22°C with a feels like temperature of 10.17°C. The pressure is 983 hPa and the humidity is 68%. The wind is blowing at a speed of 10.28 m/s from the southwest direction with a gust speed of 13.41 m/s. The sky is mostly covered with scattered clouds with a cloud cover of 40%. The visibility is good with a distance of 10,000 meters. The sun is expected to rise at 5:40 AM and set at 9:22 PM local time.
 
 
 The code is just a sample: you can modify the code however you wish, move it to a Jupyter notebook, etc.
@@ -49,9 +49,11 @@ The code is just a sample: you can modify the code however you wish, move it to 
 If you have any issues with the code, please let us know: either in person (better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*. You can also start an issue in this repository.
 
 ### Choose the data
-In the `data` subfolder, you can find pre-downloaded input data for 100 cities around the world. 
+In the `data` subfolder, you can find pre-downloaded input data for 100* cities around the world. 
 
 We recommend that you choose a small subset of the cities (5-20 inputs)  for each task as your development set so that you can iterate quickly.
+
+**If you look carefully, you will notice there are actually just 98 cities. That's what happens if you ask ChatGPT to generate "a list of 100 cities"* :upside_down_face:
 
 
 ### Access the models
@@ -130,11 +132,11 @@ Use the data from task #1 or #2 and generate the reports with a specific style o
 
 ## Evaluation
 
-In this task, the evaluation is mainly qualitative.
-
-It may be helpful to log your setup and outputs so that you have a reference for your answers.
+In this task, the evaluation is mainly qualitative. It may be helpful to log your setup and outputs so that you have a reference for your answers.
 
 You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later!).
+
+Note that the weather data is **up-to-date for 28 March 2024**: for evaluation the accuracy of the forecasts, feel free to check https://openweathermap.org!
 
 ## Submission
 To complete the assignment, you need to submit a PDF report via the following 👉️ **[Google Form](https://forms.gle/gpmEHNuQirmqhKcH8)** 👈️ until **Friday 12 April, 2024**.

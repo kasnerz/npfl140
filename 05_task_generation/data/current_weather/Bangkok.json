@@ -1,49 +1,43 @@
 {
     "coord": {
-        "lon": 100.4935,
-        "lat": 13.7525
+        "lon": 100.6224,
+        "lat": 13.8246
     },
     "weather": [
         {
-            "id": 500,
-            "main": "Rain",
-            "description": "light rain",
-            "icon": "10n"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 27.34,
-        "feels_like": 32.12,
-        "temp_min": 25.96,
-        "temp_max": 28.88,
-        "pressure": 1007,
-        "humidity": 93,
-        "sea_level": 1007,
-        "grnd_level": 1006
+        "temp": 31.16,
+        "feels_like": 37.72,
+        "temp_min": 30.01,
+        "temp_max": 33.33,
+        "pressure": 1010,
+        "humidity": 69
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.92,
-        "deg": 255,
-        "gust": 8.8
-    },
-    "rain": {
-        "1h": 0.75
+        "speed": 3.6,
+        "deg": 180
     },
     "clouds": {
-        "all": 82
+        "all": 20
     },
-    "dt": 1694276548,
+    "dt": 1711632306,
     "sys": {
-        "type": 2,
-        "id": 2079808,
+        "type": 1,
+        "id": 9235,
         "country": "TH",
-        "sunrise": 1694214415,
-        "sunset": 1694258680
+        "sunrise": 1711581361,
+        "sunset": 1711625332
     },
     "timezone": 25200,
-    "id": 1608132,
-    "name": "Nonthaburi",
+    "id": 7026837,
+    "name": "Lat Phrao",
     "cod": 200
 }

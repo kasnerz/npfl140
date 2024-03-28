@@ -5,39 +5,42 @@
     },
     "weather": [
         {
-            "id": 801,
-            "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02d"
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 32.04,
-        "feels_like": 32.71,
-        "temp_min": 29.48,
-        "temp_max": 33.73,
-        "pressure": 1014,
-        "humidity": 42
+        "temp": 8.13,
+        "feels_like": 4.99,
+        "temp_min": 6.66,
+        "temp_max": 9.99,
+        "pressure": 978,
+        "humidity": 89
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.12,
-        "deg": 100
+        "speed": 5.66,
+        "deg": 150
+    },
+    "rain": {
+        "1h": 1.82
     },
     "clouds": {
-        "all": 22
+        "all": 100
     },
-    "dt": 1694276571,
+    "dt": 1711632124,
     "sys": {
         "type": 2,
-        "id": 268730,
+        "id": 2075535,
         "country": "GB",
-        "sunrise": 1694237123,
-        "sunset": 1694284267
+        "sunrise": 1711604649,
+        "sunset": 1711650401
     },
-    "timezone": 3600,
-    "id": 2634341,
-    "name": "City of Westminster",
+    "timezone": 0,
+    "id": 2653265,
+    "name": "Chelsea",
     "cod": 200
 }

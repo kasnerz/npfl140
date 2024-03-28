@@ -1,46 +1,43 @@
 {
     "coord": {
-        "lon": 29.0525,
-        "lat": 41.0766
+        "lon": 28.9759,
+        "lat": 41.0064
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 24.01,
-        "feels_like": 23.95,
-        "temp_min": 23.61,
-        "temp_max": 24.19,
-        "pressure": 1015,
-        "humidity": 57,
-        "sea_level": 1015,
-        "grnd_level": 1015
+        "temp": 20.22,
+        "feels_like": 19.37,
+        "temp_min": 19.76,
+        "temp_max": 25.29,
+        "pressure": 1012,
+        "humidity": 41
     },
     "visibility": 10000,
     "wind": {
-        "speed": 7.66,
-        "deg": 49,
-        "gust": 10.65
+        "speed": 3.09,
+        "deg": 260
     },
     "clouds": {
-        "all": 3
+        "all": 75
     },
-    "dt": 1694276567,
+    "dt": 1711632326,
     "sys": {
-        "type": 1,
-        "id": 6970,
+        "type": 2,
+        "id": 2092591,
         "country": "TR",
-        "sunrise": 1694230675,
-        "sunset": 1694276704
+        "sunrise": 1711598020,
+        "sunset": 1711643056
     },
     "timezone": 10800,
-    "id": 739549,
-    "name": "\u015ei\u015fli",
+    "id": 738354,
+    "name": "Karak\u00f6y",
     "cod": 200
 }

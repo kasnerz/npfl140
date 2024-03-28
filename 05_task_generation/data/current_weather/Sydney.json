@@ -5,39 +5,39 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01n"
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 8.12,
-        "feels_like": 5.4,
-        "temp_min": 3.68,
-        "temp_max": 10.4,
-        "pressure": 1028,
-        "humidity": 62
+        "temp": 18.93,
+        "feels_like": 19.02,
+        "temp_min": 16.97,
+        "temp_max": 20.4,
+        "pressure": 1024,
+        "humidity": 82
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.63,
-        "deg": 260
+        "speed": 3.09,
+        "deg": 120
     },
     "clouds": {
-        "all": 8
+        "all": 40
     },
-    "dt": 1694276588,
+    "dt": 1711632352,
     "sys": {
         "type": 2,
-        "id": 2018875,
+        "id": 2046014,
         "country": "AU",
-        "sunrise": 1694289760,
-        "sunset": 1694331756
+        "sunrise": 1711656295,
+        "sunset": 1711698884
     },
-    "timezone": 36000,
-    "id": 2147714,
+    "timezone": 39600,
+    "id": 6619279,
     "name": "Sydney",
     "cod": 200
 }

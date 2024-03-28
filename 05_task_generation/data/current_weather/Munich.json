@@ -5,40 +5,43 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 27.18,
-        "feels_like": 28.39,
-        "temp_min": 25.74,
-        "temp_max": 28.13,
-        "pressure": 1017,
-        "humidity": 61
+        "temp": 6.16,
+        "feels_like": 4.5,
+        "temp_min": 5.01,
+        "temp_max": 6.52,
+        "pressure": 999,
+        "humidity": 84
     },
     "visibility": 10000,
     "wind": {
-        "speed": 0.89,
-        "deg": 63,
-        "gust": 2.68
+        "speed": 2.24,
+        "deg": 273,
+        "gust": 3.13
+    },
+    "rain": {
+        "1h": 0.87
     },
     "clouds": {
-        "all": 3
+        "all": 100
     },
-    "dt": 1694276577,
+    "dt": 1711632288,
     "sys": {
         "type": 2,
         "id": 2002112,
         "country": "DE",
-        "sunrise": 1694234515,
-        "sunset": 1694281251
+        "sunrise": 1711601969,
+        "sunset": 1711647457
     },
-    "timezone": 7200,
-    "id": 6940463,
-    "name": "Altstadt",
+    "timezone": 3600,
+    "id": 2867714,
+    "name": "Munich",
     "cod": 200
 }

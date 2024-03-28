@@ -5,39 +5,38 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 30.06,
-        "feels_like": 30.26,
-        "temp_min": 27.15,
-        "temp_max": 32.25,
-        "pressure": 1016,
-        "humidity": 44
+        "temp": 11.23,
+        "feels_like": 10,
+        "temp_min": 9.63,
+        "temp_max": 12.77,
+        "pressure": 989,
+        "humidity": 61
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.68,
-        "deg": 315,
-        "gust": 4.02
+        "speed": 8.75,
+        "deg": 230
     },
     "clouds": {
-        "all": 0
+        "all": 20
     },
-    "dt": 1694276561,
+    "dt": 1711632321,
     "sys": {
         "type": 2,
         "id": 2019396,
         "country": "DE",
-        "sunrise": 1694235478,
-        "sunset": 1694282591
+        "sunrise": 1711603002,
+        "sunset": 1711648727
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 2934246,
     "name": "D\u00fcsseldorf",
     "cod": 200

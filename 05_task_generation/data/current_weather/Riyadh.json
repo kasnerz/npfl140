@@ -5,39 +5,39 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01n"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 39.21,
-        "feels_like": 36.22,
-        "temp_min": 39.21,
-        "temp_max": 39.21,
-        "pressure": 1005,
-        "humidity": 10,
-        "sea_level": 1005,
-        "grnd_level": 942
+        "temp": 28.21,
+        "feels_like": 26.8,
+        "temp_min": 28.21,
+        "temp_max": 28.21,
+        "pressure": 1016,
+        "humidity": 15,
+        "sea_level": 1016,
+        "grnd_level": 945
     },
     "visibility": 10000,
     "wind": {
-        "speed": 5.79,
-        "deg": 37,
-        "gust": 9.76
+        "speed": 5.51,
+        "deg": 352,
+        "gust": 5.52
     },
     "clouds": {
-        "all": 1
+        "all": 12
     },
-    "dt": 1694276582,
+    "dt": 1711632344,
     "sys": {
         "type": 1,
         "id": 7424,
         "country": "SA",
-        "sunrise": 1694227025,
-        "sunset": 1694271877
+        "sunrise": 1711594119,
+        "sunset": 1711638443
     },
     "timezone": 10800,
     "id": 448600,

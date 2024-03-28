@@ -5,36 +5,36 @@
     },
     "weather": [
         {
-            "id": 801,
-            "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 19.07,
-        "feels_like": 18.23,
-        "temp_min": 18.83,
-        "temp_max": 19.47,
-        "pressure": 1023,
-        "humidity": 46
+        "temp": 10.14,
+        "feels_like": 9.17,
+        "temp_min": 6.23,
+        "temp_max": 12.25,
+        "pressure": 1019,
+        "humidity": 75
     },
-    "visibility": 10000,
+    "visibility": 8047,
     "wind": {
         "speed": 2.57,
         "deg": 50
     },
     "clouds": {
-        "all": 20
+        "all": 0
     },
-    "dt": 1694276573,
+    "dt": 1711632334,
     "sys": {
         "type": 2,
-        "id": 47729,
+        "id": 2040357,
         "country": "MX",
-        "sunrise": 1694262181,
-        "sunset": 1694306711
+        "sunrise": 1711629189,
+        "sunset": 1711673366
     },
     "timezone": -21600,
     "id": 3530597,

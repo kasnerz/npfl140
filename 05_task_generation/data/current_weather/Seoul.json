@@ -5,36 +5,36 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01n"
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 21.97,
-        "feels_like": 22.52,
-        "temp_min": 21.69,
-        "temp_max": 22.66,
-        "pressure": 1011,
-        "humidity": 88
+        "temp": 8.97,
+        "feels_like": 6.94,
+        "temp_min": 6.69,
+        "temp_max": 9.66,
+        "pressure": 1007,
+        "humidity": 87
     },
-    "visibility": 10000,
+    "visibility": 9000,
     "wind": {
-        "speed": 1.54,
-        "deg": 320
+        "speed": 3.6,
+        "deg": 280
     },
     "clouds": {
-        "all": 0
+        "all": 75
     },
-    "dt": 1694276355,
+    "dt": 1711632348,
     "sys": {
         "type": 1,
         "id": 8105,
         "country": "KR",
-        "sunrise": 1694293757,
-        "sunset": 1694339386
+        "sunrise": 1711574612,
+        "sunset": 1711619433
     },
     "timezone": 32400,
     "id": 1835848,

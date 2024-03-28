@@ -5,36 +5,36 @@
     },
     "weather": [
         {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
+            "id": 741,
+            "main": "Fog",
+            "description": "fog",
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 18.99,
-        "feels_like": 18.3,
-        "temp_min": 18.99,
-        "temp_max": 18.99,
-        "pressure": 1028,
-        "humidity": 52
+        "temp": 12.99,
+        "feels_like": 12.64,
+        "temp_min": 12.99,
+        "temp_max": 12.99,
+        "pressure": 1030,
+        "humidity": 88
     },
-    "visibility": 10000,
+    "visibility": 6000,
     "wind": {
-        "speed": 6.69,
-        "deg": 150
+        "speed": 2.06,
+        "deg": 350
     },
     "clouds": {
-        "all": 75
+        "all": 100
     },
-    "dt": 1694276551,
+    "dt": 1711632309,
     "sys": {
         "type": 1,
         "id": 8582,
         "country": "CO",
-        "sunrise": 1694256530,
-        "sunset": 1694300342
+        "sunrise": 1711623403,
+        "sunset": 1711667130
     },
     "timezone": -18000,
     "id": 3678413,

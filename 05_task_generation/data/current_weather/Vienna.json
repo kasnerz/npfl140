@@ -13,31 +13,31 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 28.14,
-        "feels_like": 28.25,
-        "temp_min": 26.6,
-        "temp_max": 29.26,
-        "pressure": 1019,
-        "humidity": 46
+        "temp": 18.95,
+        "feels_like": 17.84,
+        "temp_min": 17.07,
+        "temp_max": 20.34,
+        "pressure": 995,
+        "humidity": 36
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.63,
-        "deg": 140
+        "speed": 7.2,
+        "deg": 180
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1694276592,
+    "dt": 1711632149,
     "sys": {
         "type": 2,
-        "id": 2037452,
+        "id": 2039456,
         "country": "AT",
-        "sunrise": 1694233359,
-        "sunset": 1694280105
+        "sunrise": 1711600817,
+        "sunset": 1711646307
     },
-    "timezone": 7200,
-    "id": 2775260,
-    "name": "Innere Stadt",
+    "timezone": 3600,
+    "id": 2761369,
+    "name": "Vienna",
     "cod": 200
 }

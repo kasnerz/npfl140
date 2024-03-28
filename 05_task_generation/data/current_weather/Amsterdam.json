@@ -5,39 +5,39 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 27.98,
-        "feels_like": 29.2,
-        "temp_min": 26.04,
-        "temp_max": 29.93,
-        "pressure": 1015,
-        "humidity": 58
+        "temp": 11.22,
+        "feels_like": 10.17,
+        "temp_min": 10.47,
+        "temp_max": 12.22,
+        "pressure": 983,
+        "humidity": 68
     },
     "visibility": 10000,
     "wind": {
-        "speed": 1.34,
-        "deg": 153,
-        "gust": 2.24
+        "speed": 10.28,
+        "deg": 207,
+        "gust": 13.41
     },
     "clouds": {
-        "all": 0
+        "all": 40
     },
-    "dt": 1694276545,
+    "dt": 1711632266,
     "sys": {
         "type": 2,
         "id": 2012552,
         "country": "NL",
-        "sunrise": 1694235853,
-        "sunset": 1694283120
+        "sunrise": 1711603405,
+        "sunset": 1711649228
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 2759794,
     "name": "Amsterdam",
     "cod": 200

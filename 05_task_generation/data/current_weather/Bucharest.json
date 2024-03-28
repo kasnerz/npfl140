@@ -13,30 +13,30 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 28.05,
-        "feels_like": 27.18,
-        "temp_min": 27.02,
-        "temp_max": 29.34,
-        "pressure": 1013,
-        "humidity": 31
+        "temp": 20.36,
+        "feels_like": 19.76,
+        "temp_min": 19.89,
+        "temp_max": 22.11,
+        "pressure": 1001,
+        "humidity": 50
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.12,
-        "deg": 70
+        "speed": 9.26,
+        "deg": 270
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1694276552,
+    "dt": 1711632244,
     "sys": {
         "type": 2,
         "id": 2037828,
         "country": "RO",
-        "sunrise": 1694231225,
-        "sunset": 1694277570
+        "sunrise": 1711598610,
+        "sunset": 1711643845
     },
-    "timezone": 10800,
+    "timezone": 7200,
     "id": 676742,
     "name": "Grefoaicele",
     "cod": 200

@@ -5,38 +5,38 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 29.08,
-        "feels_like": 29.18,
-        "temp_min": 27.16,
-        "temp_max": 29.88,
-        "pressure": 1016,
-        "humidity": 45
+        "temp": 12.29,
+        "feels_like": 11.35,
+        "temp_min": 11.45,
+        "temp_max": 12.88,
+        "pressure": 984,
+        "humidity": 68
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.06,
-        "deg": 250
+        "speed": 7.2,
+        "deg": 210
     },
     "clouds": {
-        "all": 0
+        "all": 75
     },
-    "dt": 1694276563,
+    "dt": 1711632323,
     "sys": {
         "type": 1,
         "id": 1263,
         "country": "DE",
-        "sunrise": 1694234541,
-        "sunset": 1694281980
+        "sunrise": 1711602129,
+        "sunset": 1711648053
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 2911298,
     "name": "Hamburg",
     "cod": 200

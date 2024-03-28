@@ -5,38 +5,39 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 29.13,
-        "feels_like": 29.35,
-        "temp_min": 27.17,
-        "temp_max": 31.69,
-        "pressure": 1013,
-        "humidity": 46
+        "temp": 11.56,
+        "feels_like": 10.47,
+        "temp_min": 9.93,
+        "temp_max": 13.43,
+        "pressure": 992,
+        "humidity": 65
     },
     "visibility": 10000,
     "wind": {
-        "speed": 1.54,
-        "deg": 0
+        "speed": 11.32,
+        "deg": 210,
+        "gust": 17.49
     },
     "clouds": {
-        "all": 0
+        "all": 20
     },
-    "dt": 1694276539,
+    "dt": 1711632321,
     "sys": {
         "type": 2,
         "id": 2081434,
         "country": "DE",
-        "sunrise": 1694235092,
-        "sunset": 1694282063
+        "sunrise": 1711602589,
+        "sunset": 1711648225
     },
-    "timezone": 7200,
+    "timezone": 3600,
     "id": 2925533,
     "name": "Frankfurt am Main",
     "cod": 200

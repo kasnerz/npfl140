@@ -1,43 +1,43 @@
 {
     "coord": {
-        "lon": -1.9,
-        "lat": 52.48
+        "lon": -1.9027,
+        "lat": 52.4797
     },
     "weather": [
         {
-            "id": 801,
+            "id": 803,
             "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02d"
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 28.47,
-        "feels_like": 29.55,
-        "temp_min": 27.32,
-        "temp_max": 29.87,
-        "pressure": 1015,
-        "humidity": 55
+        "temp": 5.9,
+        "feels_like": 1.27,
+        "temp_min": 5.13,
+        "temp_max": 7.64,
+        "pressure": 973,
+        "humidity": 90
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.09,
-        "deg": 260
+        "speed": 8.23,
+        "deg": 150
     },
     "clouds": {
-        "all": 20
+        "all": 75
     },
-    "dt": 1694276211,
+    "dt": 1711632309,
     "sys": {
         "type": 2,
         "id": 2016075,
         "country": "GB",
-        "sunrise": 1694237477,
-        "sunset": 1694284755
+        "sunrise": 1711605029,
+        "sunset": 1711650865
     },
-    "timezone": 3600,
-    "id": 3333125,
+    "timezone": 0,
+    "id": 2655603,
     "name": "Birmingham",
     "cod": 200
 }
