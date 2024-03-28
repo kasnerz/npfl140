@@ -42,6 +42,7 @@ Clone or download this repository (`git clone https://github.com/kasnerz/npfl140
 
 For starters, try running the code:
 ```
+pip3 install requests
 python3 sample.py --node 1
 ```
 
