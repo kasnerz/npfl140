@@ -1,6 +1,8 @@
 # NPFL140 Assignment #2: Machine Translation using LLMs
 
 - Deadline: **Wednesday 2 May, 2024**.
+- [Evaluation interface](https://quest.ms.mff.cuni.cz/npfl140/)
+- Submission email: `helcl@ufal.mff.cuni.cz`
 ---
 
 In this assigment, you will use LLMs for **translating text** in various
@@ -64,7 +66,7 @@ OpenAI-compatible API provided by
 [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API).
 
 
-Currently running models (TODO):
+Currently running models:
 
 | Node | Model                                                                                             |
 | ---- | ------------------------------------------------------------------------------------------------- |
