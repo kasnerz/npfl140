@@ -51,7 +51,7 @@ The code is just a sample: you can modify the code however you wish, move it to
 a Jupyter notebook, etc.
 
 If you have any issues with the code, please let us know: either in person
-(better) or by e-mail to *helcl (at) ufal.mff.cuni.cz*. You can also start an
+(better) or by e-mail to `helcl@ufal.mff.cuni.cz`. You can also start an
 issue in this repository.
 
 ### Get the data
@@ -111,19 +111,18 @@ Summarize your findings in a short report.
 
 ## Evaluation
 
-For evaluation into English, 
+For evaluation of translation into English, use the [web interface](https://quest.ms.mff.cuni.cz/npfl140/) for automatic evaluation. Try to look at each of the outputs and inspect them subjectively.
+Can you spot patterns in the translation quality depending on the source language?
 
-TODO
+For evaluation of translation into your language, there is no evaluation interface, so please inspect all outputs manually and comment on the quality.
 
 ## Submission
-
-TODO
 
 Please send us your reports via email `helcl@ufal.mff.cuni.cz`, until **May 2, 2024**.
 
 The report should contain:
 - the name of your team and your team members,
-- the summary of your findings with translation into English and into your language.
+- the summary of your findings with translation into your language (plus pointer to the team name in the leaderboard if it is not the same)
 
 The most straightforward way to write the report is to answer the questions for
 each task in a **bullet-point format**. However, you can also write **free-form
