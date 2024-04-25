@@ -1,6 +1,6 @@
 # NPFL140 Assignment #2: Machine Translation using LLMs
 
-- Deadline: **Wednesday 2 May, 2024**.
+- Deadline: **Thursday 2 May, 2024**.
 - [Evaluation interface](https://quest.ms.mff.cuni.cz/npfl140/)
 - Submission email: `helcl@ufal.mff.cuni.cz`
 ---
