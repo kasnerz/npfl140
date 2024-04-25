@@ -104,6 +104,8 @@ You can make multiple submissions, but please be consistent in your team name so
 
 Also please do not use translation tools like Google translate. They work. It is not the point of this assignment to get the best translations possible.
 
+Experiment with different prompting methods (zero-shot/few-shot) and observe how they influence the model behavior and how it affects the translation quality.
+
 ### Translation into your language
 
 Next, try to translate the texts into a language of your choice. Experiment with including the source, the English translation, or both, in the prompt.
