@@ -4,21 +4,10 @@ import os
 import requests
 import argparse
 import json
+import langcodes
 
 API_KEY = "npfl140"
 
-
-TRANSLATION_PROMPTS = {
-    "almar": "Translate this from {src_lang} to {tgt_lang}:\n{src_lang}: {src_sentence} \n{tgt_lang}: ".format,
-    "tower": "Translate the following text from {src_lang} into {tgt_lang}.\n"
-             "{src_lang}: {src_sentence}.\n"
-             "{tgt_lang}:".format,
-    "llama": "{src_lang}: {src_sentence} {tgt_lang}: ".format
-}
-
-# This is exhaustive list of Tower of ALMA_R tuning languages. This needs to be extended for future.
-CODE_TO_LANGUAGE = {'en': 'English', 'de': 'German', 'fr': 'French', 'es': 'Spanish', 'it': 'Italian', 'nl': 'Dutch',
-                    'pt': 'Portuguese', 'ru': 'Russian', 'zh': 'Chinese', 'cs': 'Czech', 'is': 'Icelandic'}
 
 def base_model_api(node, model_args, prompt):
     API_URL = (
@@ -71,7 +60,6 @@ if __name__ == "__main__":
     parser.add_argument("--src_text", type=str, required=True)
     parser.add_argument("--src_lang", type=str, default="de")
     parser.add_argument("--tgt_lang", type=str, default="en")
-    parser.add_argument("--prompt_type", type=str, default="almar")
 
     parser.add_argument("--max_tokens", "-m", help="Maximum number of tokens to generate", type=int, default=300)
     parser.add_argument("--seed", "-r", help="Seed for random number generator", type=int, default=42)
@@ -82,30 +70,23 @@ if __name__ == "__main__":
     parser.add_argument("--do_sample", "-s", help="Use sampling instead of greedy decoding", action="store_true")
     args = parser.parse_args()
 
-    if args.prompt_type not in TRANSLATION_PROMPTS:
-        raise ValueError(f"Unknown prompt type: {args.prompt_type}")
-    if args.src_lang not in CODE_TO_LANGUAGE:
-        raise ValueError(f"Unknown source language code: {args.src_lang}. Extending list could be enough. Check if the language is supported.")
-    if args.tgt_lang not in CODE_TO_LANGUAGE:
-        raise ValueError(f"Unknown target language code: {args.tgt_lang}. Extending list could be enough. Check if the language is supported.")
+    TRANSLATION_PROMPTS = {
+        # mistral
+        1: "Translate the following text from {src_lang} into {tgt_lang}:\n{src_sentence}",
+        # tower
+        2: "Translate the following text from {src_lang} into {tgt_lang}.\n{src_lang}: {src_sentence}.\n{tgt_lang}:",
+        # aya
+        3: "Translate the following text from {src_lang} into {tgt_lang}:\n{src_sentence}",
+        # alma-r
+        4: "Translate this from {src_lang} to {tgt_lang}:\n{src_lang}: {src_sentence} \n{tgt_lang}: "
+    }
 
-    prompt = TRANSLATION_PROMPTS[args.prompt_type](src_lang=CODE_TO_LANGUAGE[args.src_lang],
-                                                   tgt_lang=CODE_TO_LANGUAGE[args.tgt_lang],
+    prompt = TRANSLATION_PROMPTS[args.node].format(src_lang=langcodes.Language(args.src_lang).language_name(),
+                                                   tgt_lang=langcodes.Language(args.tgt_lang).language_name(),
                                                    src_sentence=args.src_text)
-
     print("[prompt]")
     print(prompt)
-
-    print(f"[info]")
-    print(f"Words: {len(prompt.split())}, Characters: {len(prompt)}")
-
-    """
-	 If you want to count the approximate number of tokens in the output text, you need to first install the transformers library: `pip install transformers`. Then you can use the following code
-	"""
-
-    print()
     print("[output]")
-
     model_args = {
         "max_tokens": args.max_tokens,
         "num_beams": args.num_beams,
@@ -116,17 +97,14 @@ if __name__ == "__main__":
         "seed": args.seed,
     }
 
-    # base model
-    if args.node == 2:
+    # ALMA-R is a base model
+    if args.node == 4:
         output_text = base_model_api(
             node=args.node, model_args=model_args, prompt=prompt
         )
-    # instruction-tuned models
+    # the rest of the models are instruction-tuned
     else:
         output_text = instruct_model_api(
             node=args.node, model_args=model_args, prompt=prompt
         )
-
     print(output_text)
-
-    # remove to generate output for all samples
