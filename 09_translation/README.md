@@ -17,7 +17,7 @@ translate it to English.
 **Overview of your goals:**
 
 1. Find a team.
-2. Translate the data.
+2. Translate the data into English and one another language.
 3. Write a short report describing your findings.
 
 ## How to start
