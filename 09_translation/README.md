@@ -1,12 +1,10 @@
 # NPFL140 Assignment #2: Machine Translation using LLMs
 
 - Deadline: **Wednesday 2 May, 2024**.
-- Submission form TODO (Jindřich's chrf tool)
 ---
 
 In this assigment, you will use LLMs for **translating text** in various
 languages.
-
 
 As in the last assignment, you will have access to multiple open models running
 on our in-house cluster via API.
@@ -18,8 +16,7 @@ translate it to English.
 
 1. Find a team.
 2. Translate the data.
-3. Write the report describing your findings.
-4. Submit the report.
+3. Write a short report describing your findings.
 
 ## How to start
 
@@ -52,11 +49,11 @@ The code is just a sample: you can modify the code however you wish, move it to
 a Jupyter notebook, etc.
 
 If you have any issues with the code, please let us know: either in person
-(better) or by e-mail to *helcl (at) ufal.mff.cuni.cz*. You can also start an
+(better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*. You can also start an
 issue in this repository.
 
-### Load the data
-In the `data` subfolder, you can find TODO
+### Get the data
+Go to [the assignment page]()
 
 ### Access the models
 
