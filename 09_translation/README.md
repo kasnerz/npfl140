@@ -99,7 +99,7 @@ An example of how to use both  API endpoints is included in the sample code.
 ### Translation to English
 
 Your first task will be to translate all of the texts in `sources.txt` into English and submit the translations via the [web interface](https://quest.ms.mff.cuni.cz/npfl140/).
-The translations will be evaluated against a reference using Character F-score and the results will be shown on a leaderboard.
+The translations will be evaluated against a reference using [Character-level F-score](https://machinetranslate.org/chrF) and the results will be shown on a leaderboard.
 You can make multiple submissions, but please be consistent in your team name so we can keep track of your efforts.
 
 Also please do not use translation tools like Google translate. They work. It is not the point of this assignment to get the best translations possible.
