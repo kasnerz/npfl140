@@ -9,7 +9,7 @@ languages.
 As in the last assignment, you will have access to multiple open models running
 on our in-house cluster via API.
 
-As an input, you provide a sentence in a soruce sentence and the goal is to
+As an input, you provide a sentence in a source sentence and the goal is to
 translate it to English.
 
 **Overview of your goals:**
@@ -24,8 +24,6 @@ translate it to English.
 It is strongly recommended that you do this assignment in a team **up to 5
 people**. You can have the same team as in the first assignment.
 
-You should invent a name for your team (you will need to fill it later in the
-submission form).
 
 If you do not have any teammates for some reason (for example, you have not
 participated in the class), you can also submit the assignment on your own.
@@ -38,18 +36,20 @@ https://github.com/kasnerz/npfl140`) and navigate to the subfolder
 
 For starters, try running the code:
 ```
-pip3 install requests
-python3 sample.py --node 1
+pip3 install -r requirements.txt
+python3 sample.py --node 1 --src_text "Rechtsstaatlichkeit und Menschenrechte sind weltweit"
 ```
 
-The program should output TODO:
-> TODO
+The program should output:
+```
+"The rule of law and human rights are worldwide."
+```
 
 The code is just a sample: you can modify the code however you wish, move it to
 a Jupyter notebook, etc.
 
 If you have any issues with the code, please let us know: either in person
-(better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*. You can also start an
+(better) or by e-mail to *helcl (at) ufal.mff.cuni.cz*. You can also start an
 issue in this repository.
 
 ### Get the data
@@ -66,12 +66,12 @@ OpenAI-compatible API provided by
 
 Currently running models (TODO):
 
-| Node | Model                                                                                             | Released     | Max input size (tokens) | Description                                                  |
-| ---- | ------------------------------------------------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
-| 1    | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | Sep 27, 2023 | 8,192                   | mid-size (7B), instruction-tuned                             |
-| 2    | [`mistralai/Mistral-7B-v0.1`](https://huggingface.co/mistralai/Mistral-7B-v0.1)                   | Sep 27, 2023 | 8,192                   | mid-size (7B), base                                          |
-| 3    | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | 2,048                   | small (2.7B), instruction-tuned                              |
-| 4    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | 1,024                   | large (13B), instruction-tuned, multilingual (101 languages) |
+| Node | Model                                                                                             |
+| ---- | ------------------------------------------------------------------------------------------------- |
+| 1    | [`mistralai/Mistral-7B-Instruct-v0.1`](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) |
+| 2    | [`Unbabel/TowerInstruct-7B-v0.1`](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.1)           |
+| 3    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               |
+| 4    | [`haoranxu/ALMA-7B-R`](https://huggingface.co/haoranxu/ALMA-7B-R)                                 |
 
 
 For the full list of parameters you can use in the API calls, see the
@@ -82,13 +82,9 @@ and the
 class.
 
 Note that:
-- The instruction-tuned models (1, 3, 4) should be queried with the
-  `chat/completions` endpoint, which makes sure that the input is appropriately
-  formatted for each model. You can easily prompt these models with
-  instructions in natural language.
-- The base model (2) should be queried with the `completions` endpoint.  The
-  model is only pre-trained on the next token prediction, so you need to
-  formulate your task with that in mind (kudos if you are able to do that!)
+- The instruction-tuned models (1, 2, 3) should be queried with the
+  `chat/completions` endpoint.
+- The base model (4) should be queried with the `completions` endpoint.
 
 An example of how to use both  API endpoints is included in the sample code.
 
