@@ -1,6 +1,8 @@
 # NPFL140 Assignment #2: Machine Translation using LLMs
 
-- Deadline: **Wednesday 2 May, 2024**.
+- Deadline: **Thursday 2 May, 2024**.
+- [Evaluation interface](https://quest.ms.mff.cuni.cz/npfl140/)
+- Submission email: `helcl@ufal.mff.cuni.cz`
 ---
 
 In this assigment, you will use LLMs for **translating text** in various
@@ -15,7 +17,7 @@ translate it to English.
 **Overview of your goals:**
 
 1. Find a team.
-2. Translate the data.
+2. Translate the data into English and one another language.
 3. Write a short report describing your findings.
 
 ## How to start
@@ -37,19 +39,19 @@ https://github.com/kasnerz/npfl140`) and navigate to the subfolder
 For starters, try running the code:
 ```
 pip3 install -r requirements.txt
-python3 sample.py --node 1 --src_text "Rechtsstaatlichkeit und Menschenrechte sind weltweit"
+python3 sample.py --node 1 --src_text "Rechtsstaatlichkeit und Menschenrechte sind weltweit bedroht."
 ```
 
 The program should output:
 ```
-"The rule of law and human rights are worldwide."
+"The rule of law and human rights are worldwide in danger."
 ```
 
 The code is just a sample: you can modify the code however you wish, move it to
 a Jupyter notebook, etc.
 
 If you have any issues with the code, please let us know: either in person
-(better) or by e-mail to *helcl (at) ufal.mff.cuni.cz*. You can also start an
+(better) or by e-mail to `helcl@ufal.mff.cuni.cz`. You can also start an
 issue in this repository.
 
 ### Get the data
@@ -64,7 +66,7 @@ OpenAI-compatible API provided by
 [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API).
 
 
-Currently running models (TODO):
+Currently running models:
 
 | Node | Model                                                                                             |
 | ---- | ------------------------------------------------------------------------------------------------- |
@@ -97,10 +99,12 @@ An example of how to use both  API endpoints is included in the sample code.
 ### Translation to English
 
 Your first task will be to translate all of the texts in `sources.txt` into English and submit the translations via the [web interface](https://quest.ms.mff.cuni.cz/npfl140/).
-The translations will be evaluated against a reference using Character F-score and the results will be shown on a leaderboard.
+The translations will be evaluated against a reference using [Character-level F-score](https://machinetranslate.org/chrF) and the results will be shown on a leaderboard.
 You can make multiple submissions, but please be consistent in your team name so we can keep track of your efforts.
 
 Also please do not use translation tools like Google translate. They work. It is not the point of this assignment to get the best translations possible.
+
+Experiment with different prompting methods (zero-shot/few-shot) and observe how they influence the model behavior and how it affects the translation quality.
 
 ### Translation into your language
 
@@ -109,19 +113,18 @@ Summarize your findings in a short report.
 
 ## Evaluation
 
-For evaluation into English, 
+For evaluation of translation into English, use the [web interface](https://quest.ms.mff.cuni.cz/npfl140/) for automatic evaluation. Try to look at each of the outputs and inspect them subjectively.
+Can you spot patterns in the translation quality depending on the source language?
 
-TODO
+For evaluation of translation into your language, there is no evaluation interface, so please inspect all outputs manually and comment on the quality.
 
 ## Submission
-
-TODO
 
 Please send us your reports via email `helcl@ufal.mff.cuni.cz`, until **May 2, 2024**.
 
 The report should contain:
 - the name of your team and your team members,
-- the summary of your findings with translation into English and into your language.
+- the summary of your findings with translation into your language (plus pointer to the team name in the leaderboard if it is not the same)
 
 The most straightforward way to write the report is to answer the questions for
 each task in a **bullet-point format**. However, you can also write **free-form
