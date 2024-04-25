@@ -39,12 +39,12 @@ https://github.com/kasnerz/npfl140`) and navigate to the subfolder
 For starters, try running the code:
 ```
 pip3 install -r requirements.txt
-python3 sample.py --node 1 --src_text "Rechtsstaatlichkeit und Menschenrechte sind weltweit"
+python3 sample.py --node 1 --src_text "Rechtsstaatlichkeit und Menschenrechte sind weltweit bedroht."
 ```
 
 The program should output:
 ```
-"The rule of law and human rights are worldwide."
+"The rule of law and human rights are worldwide in danger."
 ```
 
 The code is just a sample: you can modify the code however you wish, move it to
