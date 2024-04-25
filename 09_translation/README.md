@@ -53,7 +53,8 @@ If you have any issues with the code, please let us know: either in person
 issue in this repository.
 
 ### Get the data
-Go to [the assignment page]()
+In `sources.txt`, there are 21 paragraphs (each on one line) in different languages.
+For a better look at the data, you may want to go to the [evaluation interface](https://quest.ms.mff.cuni.cz/npfl140/).
 
 ### Access the models
 
@@ -63,7 +64,7 @@ OpenAI-compatible API provided by
 [text-generation-webui](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API).
 
 
-Currently running models:
+Currently running models (TODO):
 
 | Node | Model                                                                                             | Released     | Max input size (tokens) | Description                                                  |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
@@ -97,50 +98,39 @@ An example of how to use both  API endpoints is included in the sample code.
 ## Tasks
 
 
-### Translation
+### Translation to English
 
+Your first task will be to translate all of the texts in `sources.txt` into English and submit the translations via the [web interface](https://quest.ms.mff.cuni.cz/npfl140/).
+The translations will be evaluated against a reference using Character F-score and the results will be shown on a leaderboard.
+You can make multiple submissions, but please be consistent in your team name so we can keep track of your efforts.
 
-TODO
+Also please do not use translation tools like Google translate. They work. It is not the point of this assignment to get the best translations possible.
 
-Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You do not need to retrieve the data yourself - you can find the input files in `data/current_weather`.
+### Translation into your language
 
-**Questions**:
-
-- **1a)** TODO
-- **1b)**
-- **1c)**
-- **1d)**
+Next, try to translate the texts into a language of your choice. Experiment with including the source, the English translation, or both, in the prompt.
+Summarize your findings in a short report.
 
 ## Evaluation
 
+For evaluation into English, 
+
 TODO
-
-In this task, the evaluation is mainly qualitative. It may be helpful to log
-your setup and outputs so that you have a reference for your answers.
-
-You should also keep thinking about how would you evaluate the outputs in a
-more rigorous way (we will get to evaluation later!).
-
-Note that the weather data is **up-to-date for 28 March 2024**: for evaluation
-the accuracy of the forecasts, feel free to check https://openweathermap.org!
 
 ## Submission
 
 TODO
 
-To complete the assignment, you need to submit a PDF report via the following
-👉️ **[Google Form](https://forms.gle/gpmEHNuQirmqhKcH8)** 👈️ until **Friday 12
-April, 2024**.
+Please send us your reports via email `helcl@ufal.mff.cuni.cz`, until **May 2, 2024**.
 
 The report should contain:
 - the name of your team and your team members,
-- the answers to the questions.
+- the summary of your findings with translation into English and into your language.
 
 The most straightforward way to write the report is to answer the questions for
 each task in a **bullet-point format**. However, you can also write **free-form
 text** as long as you answer to the outlined problems. Any additional
 experiments, interesting remarks or ideas are welcome!
-
 
 You only need to submit the form **once per team**. There are no formal
 restrictions on the format of the report (i.e. Google Docs is fine).
