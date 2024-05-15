@@ -1,3 +1,3 @@
 ## NPFL140
 
-My materials for the [LLM course](https://ufal.mff.cuni.cz/courses/npfl140) @ MFF UK.
+Materials for the LLM course ([NPFL140](https://ufal.mff.cuni.cz/courses/npfl140)) at MFF UK.
