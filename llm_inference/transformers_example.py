@@ -7,7 +7,6 @@ Minimal example of decoding with a pretrained meta-llama/Llama-3.2-1B model usin
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # usually the namespace/model_name, such as "mistralai/Mistral-7B-v0.1"
-# model_name = "meta-llama/Llama-3.2-1B-Instruct"
 model_name = "meta-llama/Llama-3.2-1B-Instruct"
 
 # prefix given to the model
@@ -26,13 +25,12 @@ input_ids = tokenizer(text, return_tensors="pt").to(device)
 output_ids = model.generate(
     **input_ids,
     max_new_tokens=5,
-    do_sample=False,
-    # top_k=10,
-    # top_p=0.9,
+    do_sample=True,
+    top_k=10,
+    top_p=0.9,
     num_beams=10,
     num_return_sequences=10
 )
 output_text = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
 
-breakpoint()
 print(output_text)
