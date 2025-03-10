@@ -35,8 +35,8 @@ if __name__ == "__main__":
     response = generate_text(
         "Who are you?",
         model=model,
-        temperature=10.0,
-        top_k=1000,
-        top_p=1,
+        temperature=0.7,
+        top_k=50,
+        top_p=0.9,
     )
     print(response)
