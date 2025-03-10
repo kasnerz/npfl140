@@ -1,3 +1,0 @@
-langcodes
-language_data
-requests
