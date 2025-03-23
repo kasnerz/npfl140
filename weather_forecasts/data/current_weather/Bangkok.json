@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 100.6224,
+        "lat": 13.8246
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.16,
+        "feels_like": 37.72,
+        "temp_min": 30.01,
+        "temp_max": 33.33,
+        "pressure": 1010,
+        "humidity": 69
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 180
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1711632306,
+    "sys": {
+        "type": 1,
+        "id": 9235,
+        "country": "TH",
+        "sunrise": 1711581361,
+        "sunset": 1711625332
+    },
+    "timezone": 25200,
+    "id": 7026837,
+    "name": "Lat Phrao",
+    "cod": 200
+}

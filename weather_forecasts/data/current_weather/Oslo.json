@@ -1,0 +1,49 @@
+{
+    "coord": {
+        "lon": 10.739,
+        "lat": 59.9133
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 6.86,
+        "feels_like": 3.96,
+        "temp_min": 5.46,
+        "temp_max": 8.15,
+        "pressure": 990,
+        "humidity": 94,
+        "sea_level": 990,
+        "grnd_level": 965
+    },
+    "visibility": 8053,
+    "wind": {
+        "speed": 4.36,
+        "deg": 22,
+        "gust": 11
+    },
+    "rain": {
+        "1h": 0.15
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1711632342,
+    "sys": {
+        "type": 2,
+        "id": 237284,
+        "country": "NO",
+        "sunrise": 1711601607,
+        "sunset": 1711648221
+    },
+    "timezone": 3600,
+    "id": 3143244,
+    "name": "Oslo",
+    "cod": 200
+}

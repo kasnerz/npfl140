@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 121.47,
+        "lat": 31.23
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 12.1,
+        "feels_like": 11.79,
+        "temp_min": 11.95,
+        "temp_max": 12.22,
+        "pressure": 1014,
+        "humidity": 93
+    },
+    "visibility": 6000,
+    "wind": {
+        "speed": 1,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1711632132,
+    "sys": {
+        "type": 2,
+        "id": 145096,
+        "country": "CN",
+        "sunrise": 1711576070,
+        "sunset": 1711620619
+    },
+    "timezone": 28800,
+    "id": 1796231,
+    "name": "Shanghai Municipality",
+    "cod": 200
+}

@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 120.98,
+        "lat": 14.5906
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 30.4,
+        "feels_like": 37.4,
+        "temp_min": 28.94,
+        "temp_max": 31.21,
+        "pressure": 1014,
+        "humidity": 79
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1711632334,
+    "sys": {
+        "type": 2,
+        "id": 2008256,
+        "country": "PH",
+        "sunrise": 1711576466,
+        "sunset": 1711620457
+    },
+    "timezone": 28800,
+    "id": 7521311,
+    "name": "National Capital Region",
+    "cod": 200
+}

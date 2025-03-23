@@ -1,0 +1,47 @@
+{
+    "coord": {
+        "lon": -9.1366,
+        "lat": 38.7078
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 16.28,
+        "feels_like": 16.08,
+        "temp_min": 15.34,
+        "temp_max": 17.19,
+        "pressure": 1003,
+        "humidity": 81
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 22.35,
+        "deg": 292,
+        "gust": 34.42
+    },
+    "rain": {
+        "1h": 0.18
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1711632331,
+    "sys": {
+        "type": 1,
+        "id": 6901,
+        "country": "PT",
+        "sunrise": 1711607217,
+        "sunset": 1711652149
+    },
+    "timezone": 0,
+    "id": 6930126,
+    "name": "Chiado",
+    "cod": 200
+}
