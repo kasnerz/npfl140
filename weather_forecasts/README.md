@@ -65,7 +65,7 @@ TBA 🤫
 
 ## Tasks
 
-Please enter your answers to tasks 1-4 in the following [shared Google doc](https://docs.google.com/document/d/1H4sPFBkC7umGo-zmV2rgsN9O-wMFT4kW1xuT9WDhN3Y/edit?usp=sharing).
+Please enter your answers to tasks #1 - #4 in the following [shared Google doc](https://docs.google.com/document/d/1H4sPFBkC7umGo-zmV2rgsN9O-wMFT4kW1xuT9WDhN3Y/edit?usp=sharing).
 Make sure your answers can be identified (for example, you can use your team name).
 
 ### 🫆 Task #0: Knowing your model
