@@ -1,6 +1,6 @@
 # NPFL140 Hands-on Exercise: Generating Weather Reports 🌦️
 
-Today, you **generate weather reports** with LLMs. 
+Today, you will **generate weather reports** with LLMs. 
 
 
 You will have access to multiple open models running on our in-house cluster via API.
