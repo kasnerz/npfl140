@@ -59,12 +59,16 @@ We recommend that you choose a small subset of the cities (5-20 inputs)  for eac
 You can access LLMs running on our cluster through the Ollama API at `http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}/api`.
 
 Currently running models: 
-| Node | Model                                  | Released     | Max input size (tokens) | Description                                                  |
-| ---- | -------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
-| 1    | [LLama 3.1 8B](https://ollama.com/library/llama3.1:8b)           | Jun 23, 2024 | 128k                    | mid-size (8B), instruction-tuned   |
-| 2    | [Phi 3.5 3.8B](https://ollama.com/library/phi3.5:3.8b)           | Aug 16, 2024 | 128k                    | small (3.8B), instruction-tuned    |
-| 3    | [Deepseek R1 14B](https://ollama.com/library/deepseek-r1:14b)    | Jan 21, 2025 | 32k                     | mid-size (14B), reasoning          |
-| 4    | [Mistral 7B](https://ollama.com/library/mistral:7b-text)         | Sep 27, 2023 | 8,192                   | mid-size (7B), base                |
+| Node | Model                                  | Released     | Description                                                  |
+| ---- | -------------------------------------- | ------------ | ------------------------------------------------------------ |
+| 1    | [LLama 3.1 8B](https://ollama.com/library/llama3.1:8b)           | Jun 23, 2024 |  mid-size (8B), instruction-tuned   |
+| 2    | [Phi 3.5 3.8B](https://ollama.com/library/phi3.5:3.8b)           | Aug 16, 2024 |  small (3.8B), instruction-tuned    |
+| 3    | [Deepseek R1 14B](https://ollama.com/library/deepseek-r1:14b)    | Jan 21, 2025 |  mid-size (14B), reasoning          |
+| 4    | [Mistral 7B](https://ollama.com/library/mistral:7b-text)         | Sep 27, 2023 |  mid-size (7B), base                |
+
+> [!NOTE]
+> The maximum input context size for our models is 8,192 tokens. 
+Some models support larger context sizes: if you run Ollama yourself, you can modify the context window size with the [num_ctx](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values) parameter. However, please do not try it in the class as it could lead to reloading the model.
 
 *Please, do not use the API for anything else than this assignment. The service will be stopped after the class.*
 
