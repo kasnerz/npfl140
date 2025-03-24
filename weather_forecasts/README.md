@@ -59,7 +59,12 @@ We recommend that you choose a small subset of the cities (5-20 inputs)  for eac
 You can access LLMs running on our cluster through the Ollama API at `http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}/api`.
 
 Currently running models: 
-TBA 🤫
+| Node | Model                                  | Released     | Max input size (tokens) | Description                                                  |
+| ---- | -------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
+| 1    | [LLama 3.1 8B](https://ollama.com/library/llama3.1:8b)           | Jun 23, 2024 | 128k                    | mid-size (8B), instruction-tuned   |
+| 2    | [Phi 3.5 3.8B](https://ollama.com/library/phi3.5:3.8b)           | Aug 16, 2024 | 128k                    | small (3.8B), instruction-tuned    |
+| 3    | [Deepseek R1 14B](https://ollama.com/library/deepseek-r1:14b)    | Jan 21, 2025 | 32k                     | mid-size (14B), reasoning          |
+| 4    | [Mistral 7B](https://ollama.com/library/mistral:7b-text)         | Sep 27, 2023 | 8,192                   | mid-size (7B), base                |
 
 *Please, do not use the API for anything else than this assignment. The service will be stopped after the class.*
 
@@ -67,10 +72,6 @@ TBA 🤫
 
 Please enter your answers to tasks #1 - #4 in the following [shared Google doc](https://docs.google.com/document/d/1H4sPFBkC7umGo-zmV2rgsN9O-wMFT4kW1xuT9WDhN3Y/edit?usp=sharing).
 Make sure your answers can be identified (for example, you can use your team name).
-
-### 🫆 Task #0: Knowing your model
-During the class, pay attention to how the model responds and try to guess how it has been trained (you can also have a guess which model it is).
-There will be a [**poll**](https://app.sli.do/event/qb8PgxbLtQHsTXqStusBsc) at the end of the class.
 
 ### ☀️ Task #1: Generate the current weather description
 Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You do not need to retrieve the data yourself - you can find the input files in `data/current_weather`.
