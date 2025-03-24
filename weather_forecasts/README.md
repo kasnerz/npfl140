@@ -58,27 +58,19 @@ We recommend that you choose a small subset of the cities (5-20 inputs)  for eac
 
 You can access LLMs running on our cluster through the Ollama API at `http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}/api`.
 
-
-Currently running models:
-
-| Node | Model                                                                                             | Released     | Max input size (tokens) | Description                                                  |
-| ---- | ------------------------------------------------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------------------------------ |
-| 1    | [todo | Sep 27, 2023 | 8,192                   | mid-size (7B), instruction-tuned                             |
-| 2    | [todo                   | Sep 27, 2023 | 8,192                   | mid-size (7B), base                                          |
-| 3    | [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2)                                       | Dec 13, 2023 | 2,048                   | small (2.7B), instruction-tuned                              |
-| 4    | [`CohereForAI/aya-101`](https://huggingface.co/CohereForAI/aya-101)                               | Feb 8, 2024  | 1,024                   | large (13B), instruction-tuned, multilingual (101 languages) |
-
-
-An example of how to use both base and chat API endpoints is included in the sample code. (todo)
+Currently running models: 
+TBA 🤫
 
 *Please, do not use the API for anything else than this assignment. The service will be stopped after the class.*
 
-
 ## Tasks
 
-### todo Task #0: Knowing your model
+Please enter your answers to tasks 1-4 in the following [shared Google doc](https://docs.google.com/document/d/1H4sPFBkC7umGo-zmV2rgsN9O-wMFT4kW1xuT9WDhN3Y/edit?usp=sharing).
+Make sure your answers can be identified (for example, you can use your team name).
+
+### 🫆 Task #0: Knowing your model
 During the class, pay attention to how the model responds and try to guess how it has been trained (you can also have a guess which model it is).
-TODO make slido poll
+There will be a [**poll**](https://app.sli.do/event/qb8PgxbLtQHsTXqStusBsc) at the end of the class.
 
 ### ☀️ Task #1: Generate the current weather description
 Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You do not need to retrieve the data yourself - you can find the input files in `data/current_weather`.
@@ -131,7 +123,7 @@ In this task, the evaluation is mainly qualitative. It may be helpful to log you
 
 You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later!).
 
-Note that the weather data is **up-to-date for 28 March 2024**: for evaluation the accuracy of the forecasts, feel free to check https://openweathermap.org!
+Note that the weather data was **up-to-date for 28 March 2024**: for evaluation the accuracy of the forecasts, feel free to check https://openweathermap.org!
 
 ## Extra links
 - OpenWeather API docs: https://openweathermap.org/api/
