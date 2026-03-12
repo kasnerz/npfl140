@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import requests
 import json
+
+import requests
 
 
 def generate_text(
@@ -11,32 +12,35 @@ def generate_text(
     top_p=0.9,
     max_tokens=1000,
 ):
-    url = "http://localhost:11434/api/generate"
+    url = "http://localhost:11434/api/chat"
     payload = {
         "model": model,
-        "prompt": prompt,
-        "temperature": temperature,
-        "max_tokens": max_tokens,
-        "top_k": top_k,
-        "top_p": top_p,
+        "messages": [{"role": "user", "content": prompt}],
+        "options": {
+            "temperature": temperature,
+            "num_predict": max_tokens,
+            "top_k": top_k,
+            "top_p": top_p,
+        },
         "stream": False,
     }
 
     response = requests.post(url, json=payload)
     j = json.loads(response.text)
 
-    return j["response"]
+    return j["message"]["content"]
 
 
 if __name__ == "__main__":
-    model = "gemma2:2b"
+    model = "llama3.2:1b"
 
     # Example 1: Generate text
     response = generate_text(
         "Who are you?",
         model=model,
-        temperature=0.7,
-        top_k=50,
-        top_p=0.9,
+        temperature=5.0,
+        top_k=500000,
+        top_p=1.0,
+        max_tokens=400,
     )
     print(response)
