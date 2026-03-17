@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": 80.2702,
-        "lat": 13.0837
+        "lon": 80.2785,
+        "lat": 13.0878
     },
     "weather": [
         {
-            "id": 802,
-            "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03n"
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 30.01,
-        "feels_like": 36.07,
-        "temp_min": 30.01,
-        "temp_max": 30.01,
-        "pressure": 1009,
-        "humidity": 74
+        "temp": 30.39,
+        "feels_like": 34.74,
+        "temp_min": 30,
+        "temp_max": 30.99,
+        "pressure": 1013,
+        "humidity": 65,
+        "sea_level": 1013,
+        "grnd_level": 1012
     },
-    "visibility": 6000,
+    "visibility": 5000,
     "wind": {
-        "speed": 4.12,
-        "deg": 130
+        "speed": 5.14,
+        "deg": 120
     },
     "clouds": {
         "all": 40
     },
-    "dt": 1711632234,
+    "dt": 1773039557,
     "sys": {
-        "type": 1,
-        "id": 9218,
+        "type": 2,
+        "id": 2104103,
         "country": "IN",
-        "sunrise": 1711586254,
-        "sunset": 1711630206
+        "sunrise": 1773017432,
+        "sunset": 1773060526
     },
     "timezone": 19800,
-    "id": 1465730,
-    "name": "Park Town",
+    "id": 1264527,
+    "name": "Chennai",
     "cod": 200
 }

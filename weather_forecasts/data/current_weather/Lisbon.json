@@ -1,47 +1,45 @@
 {
     "coord": {
-        "lon": -9.1366,
-        "lat": 38.7078
+        "lon": -9.1333,
+        "lat": 38.7167
     },
     "weather": [
         {
-            "id": 500,
-            "main": "Rain",
-            "description": "light rain",
-            "icon": "10d"
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 16.28,
-        "feels_like": 16.08,
-        "temp_min": 15.34,
-        "temp_max": 17.19,
-        "pressure": 1003,
-        "humidity": 81
+        "temp": 10.84,
+        "feels_like": 10.23,
+        "temp_min": 10.07,
+        "temp_max": 11.71,
+        "pressure": 1022,
+        "humidity": 86,
+        "sea_level": 1022,
+        "grnd_level": 1014
     },
     "visibility": 10000,
     "wind": {
-        "speed": 22.35,
-        "deg": 292,
-        "gust": 34.42
-    },
-    "rain": {
-        "1h": 0.18
+        "speed": 3.6,
+        "deg": 260
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1711632331,
+    "dt": 1773039637,
     "sys": {
         "type": 1,
         "id": 6901,
         "country": "PT",
-        "sunrise": 1711607217,
-        "sunset": 1711652149
+        "sunrise": 1773039449,
+        "sunset": 1773081419
     },
     "timezone": 0,
-    "id": 6930126,
-    "name": "Chiado",
+    "id": 2267057,
+    "name": "Lisbon",
     "cod": 200
 }

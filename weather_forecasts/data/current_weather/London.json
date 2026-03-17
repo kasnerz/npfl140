@@ -1,46 +1,45 @@
 {
     "coord": {
-        "lon": -0.1441,
-        "lat": 51.4893
+        "lon": -0.1257,
+        "lat": 51.5085
     },
     "weather": [
         {
-            "id": 501,
-            "main": "Rain",
-            "description": "moderate rain",
-            "icon": "10d"
+            "id": 701,
+            "main": "Mist",
+            "description": "mist",
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 8.13,
-        "feels_like": 4.99,
-        "temp_min": 6.66,
-        "temp_max": 9.99,
-        "pressure": 978,
-        "humidity": 89
+        "temp": 7.16,
+        "feels_like": 6.36,
+        "temp_min": 6.68,
+        "temp_max": 7.77,
+        "pressure": 1019,
+        "humidity": 93,
+        "sea_level": 1019,
+        "grnd_level": 1015
     },
-    "visibility": 10000,
+    "visibility": 1200,
     "wind": {
-        "speed": 5.66,
-        "deg": 150
-    },
-    "rain": {
-        "1h": 1.82
+        "speed": 1.54,
+        "deg": 140
     },
     "clouds": {
         "all": 100
     },
-    "dt": 1711632124,
+    "dt": 1773039349,
     "sys": {
         "type": 2,
         "id": 2075535,
         "country": "GB",
-        "sunrise": 1711604649,
-        "sunset": 1711650401
+        "sunrise": 1773037721,
+        "sunset": 1773078824
     },
     "timezone": 0,
-    "id": 2653265,
-    "name": "Chelsea",
+    "id": 2643743,
+    "name": "London",
     "cod": 200
 }

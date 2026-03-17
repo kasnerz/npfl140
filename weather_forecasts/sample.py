@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
 
-import os
-import requests
 import argparse
 import json
+import os
 
-# DO NOT MODIFY THIS MAPPING!
-node_to_model_mapping = {
-    "1": "llama3.1:8b",
-    "2": "phi3.5:3.8b",
-    "3": "deepseek-r1:14b",
-    "4": "mistral:7b-text",
-}
+import requests
 
 
 def load_data(task, forecast_pruning_factor):
@@ -31,40 +24,47 @@ def load_data(task, forecast_pruning_factor):
     return data
 
 
-def model_api(node, model_args, prompt, system_msg=None, stream=False):
-    API_URL = (
-        f"http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{node}/api/generate"
-    )
+def model_api(node, model_args, prompt, api_key, is_chat=True):
+    base_url = f"https://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{node}"
 
-    # Format the request for Ollama API
-    ollama_data = {
-        "model": node_to_model_mapping[str(node)],  # do not modify
-        "prompt": prompt,
-        "options": model_args,
-        "system": system_msg,
-        "stream": stream,
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
     }
 
+    if is_chat:
+        url = f"{base_url}/v1/chat/completions"
+        payload = {
+            "model": "default",
+            "messages": [{"role": "user", "content": prompt}],
+            **model_args,
+        }
+    else:
+        url = f"{base_url}/v1/completions"
+        payload = {"model": "default", "prompt": prompt, **model_args}
+
     # Send the request
-    response = requests.post(API_URL, json=ollama_data, stream=True)
+    response = requests.post(url, json=payload, headers=headers, timeout=120)
     response.raise_for_status()
 
-    return response
+    return response, is_chat
+
+
+def is_base_model(node_number):
+    return node_number == 4
 
 
 if __name__ == "__main__":
     # fmt: off
     parser = argparse.ArgumentParser()
-    parser.add_argument("--node", "-n", help="Node number (see the instructions for details)", type=int, required=True) 
+    parser.add_argument("--node", "-n", help="Node number (1-4)", type=int, required=True) 
+    parser.add_argument("--api-key", help="API Key for the vLLM server", type=str, default="AiTxk0ar6gz3ysD")
     parser.add_argument("--task", help="Which data to use", type=str, choices=["current_weather", "forecast"], default="current_weather")
-    parser.add_argument("--max_tokens", "-m", help="Maximum number of tokens to generate", type=int, default=500) 
-    parser.add_argument("--seed", "-r", help="Seed for random number generator", type=int, default=42) 
+    parser.add_argument("--max-tokens", "-m", help="Maximum number of tokens to generate", type=int, default=10000) 
     parser.add_argument("--temperature", "-t", help="Temperature parameter", type=float, default=1.0) 
-    parser.add_argument("--top_p", "-p", help="Top-p sampling parameter", type=float, default=1.0) 
-    parser.add_argument("--top_k", "-k", help="Top-k sampling parameter", type=int, default=0)
-    parser.add_argument("--repeat_penalty", help="Repeat penalty parameter", type=float, default=1.0)
-    parser.add_argument("--stream", help="Generate a stream of tokens instead of a single response", action="store_true")
-    parser.add_argument("--forecast_pruning_factor", help="Keep every n-th item for the forecasts. The original resolution is every 3 hours, using the factor of 2 keeps the forecast for every 6 hours.", type=int, default=1)
+    parser.add_argument("--top-p", "-p", help="Top-p sampling parameter", type=float, default=1.0) 
+    parser.add_argument("--top-k", "-k", help="Top-k sampling parameter", type=int, default=50)
+    parser.add_argument("--forecast-pruning-factor", help="Keep every n-th item for the forecasts. The original resolution is every 3 hours, using the factor of 2 keeps the forecast for every 6 hours.", type=int, default=1)
     args = parser.parse_args()
     # fmt: on
 
@@ -76,43 +76,43 @@ if __name__ == "__main__":
         city_name = (
             sample["name"] if args.task == "current_weather" else sample["city"]["name"]
         )
-        prompt = f"Write a one-paragraph weather report for {city_name} as of today based on the following data:\n{sample}\n"
+        if args.task == "forecast":
+            prompt = f"Write a one-paragraph 5-day weather forecast for {city_name} based on the following data:\n{sample}\n"
+        elif args.task == "current_weather":
+            prompt = f"Write a one-paragraph weather report for {city_name} as of today based on the following data:\n{sample}\n"
 
         print("=" * 80)
         print("[PROMPT]", prompt)
 
-        print(f"[INFO] Words: {len(prompt.split())}, Characters: {len(prompt)}")
+        print(f"[INPUT] Words: {len(prompt.split())}, Characters: {len(prompt)}")
 
-        # see https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values
+        # see vLLM API parameters
         model_args = {
-            "num_predict": args.max_tokens,
+            "max_tokens": args.max_tokens,
             "temperature": args.temperature,
             "top_p": args.top_p,
             "top_k": args.top_k,
-            "seed": args.seed,
-            "repeat_penalty": args.repeat_penalty,
         }
 
-        response = model_api(
+        response, is_chat = model_api(
             node=args.node,
             model_args=model_args,
             prompt=prompt,
-            stream=args.stream,
-            system_msg=None,  # Set to a string if you want to provide additional information to the model
+            api_key=args.api_key,
+            is_chat=not is_base_model(args.node),
         )
 
-        if args.stream:
-            print("[OUTPUT]", end=" ", flush=True)
-            for line in response.iter_lines():
-                if line:
-                    chunk_data = json.loads(line.decode("utf-8"))
-                    chunk_text = chunk_data.get("response", "")
-                    print(chunk_text, end="", flush=True)
-            print()  # Add a newline at the end
+        data = response.json()
+        if is_chat:
+            message = data["choices"][0]["message"]
+            reasoning = message.get("reasoning_content") or message.get("reasoning")
+            if reasoning:
+                print("\n--- Thinking... ---")
+                print(reasoning)
+                print("------------------------")
+            print("[OUTPUT]\n", message.get("content"))
         else:
-            text = response.json()["response"]
-
-            print("[OUTPUT]", text)
+            print("[OUTPUT]\n", data["choices"][0]["text"])
 
         # remove to generate output for all samples
         break

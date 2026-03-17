@@ -1,43 +1,46 @@
 {
     "coord": {
-        "lon": 120.98,
-        "lat": 14.5906
+        "lon": 120.9822,
+        "lat": 14.6042
     },
     "weather": [
         {
-            "id": 803,
+            "id": 804,
             "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04n"
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 30.4,
-        "feels_like": 37.4,
-        "temp_min": 28.94,
-        "temp_max": 31.21,
-        "pressure": 1014,
-        "humidity": 79
+        "temp": 30.55,
+        "feels_like": 34.14,
+        "temp_min": 30.03,
+        "temp_max": 30.63,
+        "pressure": 1011,
+        "humidity": 61,
+        "sea_level": 1011,
+        "grnd_level": 1014
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.57,
-        "deg": 150
+        "speed": 4.47,
+        "deg": 22,
+        "gust": 7.6
     },
     "clouds": {
-        "all": 75
+        "all": 100
     },
-    "dt": 1711632334,
+    "dt": 1773039220,
     "sys": {
         "type": 2,
         "id": 2008256,
         "country": "PH",
-        "sunrise": 1711576466,
-        "sunset": 1711620457
+        "sunrise": 1773007697,
+        "sunset": 1773050726
     },
     "timezone": 28800,
-    "id": 7521311,
-    "name": "National Capital Region",
+    "id": 1701668,
+    "name": "Manila",
     "cod": 200
 }

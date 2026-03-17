@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": 77.1717,
-        "lat": 28.6274
+        "lon": 77.2167,
+        "lat": 28.6667
     },
     "weather": [
         {
             "id": 721,
             "main": "Haze",
             "description": "haze",
-            "icon": "50n"
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 33.87,
-        "feels_like": 32.64,
-        "temp_min": 33.87,
-        "temp_max": 33.87,
-        "pressure": 1009,
-        "humidity": 27
+        "temp": 30.05,
+        "feels_like": 30.81,
+        "temp_min": 30.05,
+        "temp_max": 30.05,
+        "pressure": 1012,
+        "humidity": 48,
+        "sea_level": 1012,
+        "grnd_level": 986
     },
-    "visibility": 4500,
+    "visibility": 3500,
     "wind": {
-        "speed": 3.09,
-        "deg": 310
+        "speed": 3.6,
+        "deg": 280
     },
     "clouds": {
-        "all": 40
+        "all": 20
     },
-    "dt": 1711632318,
+    "dt": 1773039720,
     "sys": {
         "type": 1,
         "id": 9165,
         "country": "IN",
-        "sunrise": 1711586743,
-        "sunset": 1711631204
+        "sunrise": 1773018492,
+        "sunset": 1773060935
     },
     "timezone": 19800,
-    "id": 1273840,
-    "name": "Connaught Place",
+    "id": 1273294,
+    "name": "Delhi",
     "cod": 200
 }

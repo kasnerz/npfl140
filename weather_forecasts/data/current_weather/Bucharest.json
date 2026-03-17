@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": 26.1027,
-        "lat": 44.4361
+        "lon": 26.1063,
+        "lat": 44.4323
     },
     "weather": [
         {
@@ -13,31 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 20.36,
-        "feels_like": 19.76,
-        "temp_min": 19.89,
-        "temp_max": 22.11,
-        "pressure": 1001,
-        "humidity": 50
+        "temp": 3.93,
+        "feels_like": 1.15,
+        "temp_min": 3.89,
+        "temp_max": 4.05,
+        "pressure": 1034,
+        "humidity": 82,
+        "sea_level": 1034,
+        "grnd_level": 1024
     },
     "visibility": 10000,
     "wind": {
-        "speed": 9.26,
-        "deg": 270
+        "speed": 3.09,
+        "deg": 50
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1711632244,
+    "dt": 1773039337,
     "sys": {
         "type": 2,
-        "id": 2037828,
+        "id": 2107752,
         "country": "RO",
-        "sunrise": 1711598610,
-        "sunset": 1711643845
+        "sunrise": 1773031172,
+        "sunset": 1773072783
     },
     "timezone": 7200,
-    "id": 676742,
-    "name": "Grefoaicele",
+    "id": 683506,
+    "name": "Bucharest",
     "cod": 200
 }

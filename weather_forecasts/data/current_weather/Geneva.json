@@ -1,43 +1,46 @@
 {
     "coord": {
-        "lon": 6.1423,
-        "lat": 46.2047
+        "lon": -88.3054,
+        "lat": 41.8875
     },
     "weather": [
         {
-            "id": 802,
-            "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 13.22,
-        "feels_like": 11.51,
-        "temp_min": 11.84,
-        "temp_max": 14.49,
-        "pressure": 999,
-        "humidity": 35
+        "temp": 9.15,
+        "feels_like": 5.64,
+        "temp_min": 8.05,
+        "temp_max": 10.32,
+        "pressure": 1008,
+        "humidity": 70,
+        "sea_level": 1008,
+        "grnd_level": 979
     },
     "visibility": 10000,
     "wind": {
-        "speed": 7.2,
-        "deg": 200
+        "speed": 7.72,
+        "deg": 210,
+        "gust": 10.8
     },
     "clouds": {
-        "all": 40
+        "all": 0
     },
-    "dt": 1711632322,
+    "dt": 1773039452,
     "sys": {
-        "type": 1,
-        "id": 6928,
-        "country": "CH",
-        "sunrise": 1711603338,
-        "sunset": 1711648696
+        "type": 2,
+        "id": 2020346,
+        "country": "US",
+        "sunrise": 1773058519,
+        "sunset": 1773100344
     },
-    "timezone": 3600,
-    "id": 7285902,
+    "timezone": -18000,
+    "id": 4893591,
     "name": "Geneva",
     "cod": 200
 }

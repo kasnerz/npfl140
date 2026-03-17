@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": -3.7036,
-        "lat": 40.4167
+        "lon": -3.7026,
+        "lat": 40.4165
     },
     "weather": [
         {
-            "id": 802,
+            "id": 803,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 14.51,
-        "feels_like": 13.56,
-        "temp_min": 13.95,
-        "temp_max": 15.81,
-        "pressure": 1001,
-        "humidity": 59
+        "temp": 6.13,
+        "feels_like": 5.19,
+        "temp_min": 4.01,
+        "temp_max": 6.86,
+        "pressure": 1021,
+        "humidity": 92,
+        "sea_level": 1021,
+        "grnd_level": 945
     },
     "visibility": 10000,
     "wind": {
-        "speed": 10.29,
-        "deg": 210
+        "speed": 1.54,
+        "deg": 70
     },
     "clouds": {
-        "all": 40
+        "all": 75
     },
-    "dt": 1711632333,
+    "dt": 1773039600,
     "sys": {
         "type": 2,
-        "id": 2007545,
+        "id": 2084029,
         "country": "ES",
-        "sunrise": 1711605869,
-        "sunset": 1711650889
+        "sunrise": 1773038195,
+        "sunset": 1773080067
     },
     "timezone": 3600,
-    "id": 6545083,
-    "name": "Sol",
+    "id": 3117735,
+    "name": "Madrid",
     "cod": 200
 }

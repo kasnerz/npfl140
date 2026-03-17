@@ -1,44 +1,46 @@
 {
     "coord": {
-        "lon": 13.3889,
-        "lat": 52.517
+        "lon": 13.4105,
+        "lat": 52.5244
     },
     "weather": [
         {
-            "id": 802,
+            "id": 804,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 14.51,
-        "feels_like": 13.43,
-        "temp_min": 13.82,
-        "temp_max": 15.55,
-        "pressure": 977,
-        "humidity": 54
+        "temp": 5.3,
+        "feels_like": 3.94,
+        "temp_min": 4.07,
+        "temp_max": 6.59,
+        "pressure": 1024,
+        "humidity": 70,
+        "sea_level": 1024,
+        "grnd_level": 1018
     },
     "visibility": 10000,
     "wind": {
-        "speed": 9.83,
-        "deg": 216,
-        "gust": 14.75
+        "speed": 1.79,
+        "deg": 83,
+        "gust": 4.47
     },
     "clouds": {
-        "all": 40
+        "all": 100
     },
-    "dt": 1711632210,
+    "dt": 1773039499,
     "sys": {
         "type": 2,
-        "id": 2009543,
+        "id": 2011538,
         "country": "DE",
-        "sunrise": 1711601363,
-        "sunset": 1711647193
+        "sunrise": 1773034521,
+        "sunset": 1773075527
     },
     "timezone": 3600,
-    "id": 7576815,
-    "name": "Alt-K\u00f6lln",
+    "id": 2950159,
+    "name": "Berlin",
     "cod": 200
 }

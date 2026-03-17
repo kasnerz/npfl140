@@ -1,40 +1,45 @@
 {
     "coord": {
-        "lon": 106.7011,
-        "lat": 10.7764
+        "lon": 106.6667,
+        "lat": 10.75
     },
     "weather": [
         {
-            "id": 801,
+            "id": 803,
             "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02n"
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 28.88,
-        "feels_like": 34,
-        "temp_min": 28.88,
-        "temp_max": 28.95,
-        "pressure": 1013,
-        "humidity": 78
+        "temp": 32.82,
+        "feels_like": 39.41,
+        "temp_min": 32.82,
+        "temp_max": 33.01,
+        "pressure": 1009,
+        "humidity": 61,
+        "sea_level": 1009,
+        "grnd_level": 1009
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.6,
-        "deg": 170
+        "speed": 0.51,
+        "deg": 0
+    },
+    "rain": {
+        "1h": 0.1
     },
     "clouds": {
-        "all": 20
+        "all": 75
     },
-    "dt": 1711632324,
+    "dt": 1773039600,
     "sys": {
         "type": 2,
         "id": 2093009,
         "country": "VN",
-        "sunrise": 1711579946,
-        "sunset": 1711623830
+        "sunrise": 1773011055,
+        "sunset": 1773054238
     },
     "timezone": 25200,
     "id": 1566083,

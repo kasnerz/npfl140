@@ -1,44 +1,46 @@
 {
     "coord": {
-        "lon": 114.0545,
-        "lat": 22.5446
+        "lon": 114.0683,
+        "lat": 22.5455
     },
     "weather": [
         {
-            "id": 804,
+            "id": 803,
             "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04n"
+            "description": "broken clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 24.79,
-        "feels_like": 25.57,
-        "temp_min": 24.11,
-        "temp_max": 25.52,
-        "pressure": 1012,
-        "humidity": 86
+        "temp": 22.06,
+        "feels_like": 22.38,
+        "temp_min": 21.58,
+        "temp_max": 23.92,
+        "pressure": 1020,
+        "humidity": 79,
+        "sea_level": 1020,
+        "grnd_level": 1011
     },
     "visibility": 10000,
     "wind": {
-        "speed": 1.87,
-        "deg": 197,
-        "gust": 2.15
+        "speed": 0.51,
+        "deg": 174,
+        "gust": 2.3
     },
     "clouds": {
-        "all": 100
+        "all": 78
     },
-    "dt": 1711632350,
+    "dt": 1773039786,
     "sys": {
         "type": 2,
-        "id": 2031340,
+        "id": 104662,
         "country": "CN",
-        "sunrise": 1711578005,
-        "sunset": 1711622242
+        "sunrise": 1773009519,
+        "sunset": 1773052223
     },
     "timezone": 28800,
-    "id": 7001297,
-    "name": "Gangxia",
+    "id": 1795565,
+    "name": "Shenzhen",
     "cod": 200
 }

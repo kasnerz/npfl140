@@ -1,40 +1,42 @@
 {
     "coord": {
-        "lon": 174.7632,
-        "lat": -36.8521
+        "lon": 174.7667,
+        "lat": -36.8667
     },
     "weather": [
         {
-            "id": 802,
+            "id": 804,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03n"
+            "description": "overcast clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 15.73,
-        "feels_like": 15.24,
-        "temp_min": 14.89,
-        "temp_max": 17.73,
-        "pressure": 1009,
-        "humidity": 72
+        "temp": 18.92,
+        "feels_like": 18.62,
+        "temp_min": 18.19,
+        "temp_max": 19.35,
+        "pressure": 1012,
+        "humidity": 67,
+        "sea_level": 1012,
+        "grnd_level": 1009
     },
     "visibility": 10000,
     "wind": {
-        "speed": 7.2,
-        "deg": 250
+        "speed": 5.66,
+        "deg": 220
     },
     "clouds": {
-        "all": 40
+        "all": 100
     },
-    "dt": 1711632304,
+    "dt": 1773039614,
     "sys": {
         "type": 2,
         "id": 2012285,
         "country": "NZ",
-        "sunrise": 1711650693,
-        "sunset": 1711693182
+        "sunrise": 1772993604,
+        "sunset": 1773039008
     },
     "timezone": 46800,
     "id": 2193733,

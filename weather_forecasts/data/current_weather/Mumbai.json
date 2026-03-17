@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": 72.8782,
-        "lat": 19.0785
+        "lon": 72.8479,
+        "lat": 19.0144
     },
     "weather": [
         {
-            "id": 721,
-            "main": "Haze",
-            "description": "haze",
-            "icon": "50n"
+            "id": 711,
+            "main": "Smoke",
+            "description": "smoke",
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 29.03,
-        "feels_like": 33.57,
-        "temp_min": 27.98,
-        "temp_max": 29.03,
-        "pressure": 1009,
-        "humidity": 74
+        "temp": 38.99,
+        "feels_like": 36.64,
+        "temp_min": 31.94,
+        "temp_max": 38.99,
+        "pressure": 1011,
+        "humidity": 14,
+        "sea_level": 1011,
+        "grnd_level": 1010
     },
-    "visibility": 2500,
+    "visibility": 3000,
     "wind": {
-        "speed": 5.14,
-        "deg": 270
+        "speed": 2.57,
+        "deg": 130
     },
     "clouds": {
-        "all": 20
+        "all": 0
     },
-    "dt": 1711632303,
+    "dt": 1773039000,
     "sys": {
         "type": 1,
         "id": 9052,
         "country": "IN",
-        "sunrise": 1711587937,
-        "sunset": 1711632071
+        "sunrise": 1773019332,
+        "sunset": 1773062192
     },
     "timezone": 19800,
-    "id": 8131499,
-    "name": "Konkan Division",
+    "id": 1275339,
+    "name": "Mumbai",
     "cod": 200
 }

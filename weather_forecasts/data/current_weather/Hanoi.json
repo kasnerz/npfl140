@@ -1,49 +1,46 @@
 {
     "coord": {
-        "lon": 105.854,
-        "lat": 21.0283
+        "lon": 105.8412,
+        "lat": 21.0245
     },
     "weather": [
         {
-            "id": 500,
-            "main": "Rain",
-            "description": "light rain",
-            "icon": "10n"
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 23.98,
-        "feels_like": 24.78,
-        "temp_min": 23.98,
-        "temp_max": 23.98,
-        "pressure": 1014,
-        "humidity": 90,
-        "sea_level": 1014,
-        "grnd_level": 1013
+        "temp": 21,
+        "feels_like": 21.32,
+        "temp_min": 21,
+        "temp_max": 21,
+        "pressure": 1021,
+        "humidity": 83,
+        "sea_level": 1021,
+        "grnd_level": 1020
     },
-    "visibility": 10000,
+    "visibility": 7774,
     "wind": {
-        "speed": 2.37,
-        "deg": 320,
-        "gust": 2.06
-    },
-    "rain": {
-        "1h": 0.32
+        "speed": 8.44,
+        "deg": 29,
+        "gust": 10.99
     },
     "clouds": {
         "all": 100
     },
-    "dt": 1711632323,
+    "dt": 1773039633,
     "sys": {
         "type": 1,
         "id": 9308,
         "country": "VN",
-        "sunrise": 1711579996,
-        "sunset": 1711624186
+        "sunrise": 1773011460,
+        "sunset": 1773054230
     },
     "timezone": 25200,
-    "id": 1561096,
-    "name": "Xom Pho",
+    "id": 1581130,
+    "name": "Hanoi",
     "cod": 200
 }

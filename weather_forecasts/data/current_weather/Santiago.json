@@ -1,46 +1,46 @@
 {
     "coord": {
-        "lon": -83.7981,
-        "lat": 9.8695
+        "lon": -70.6483,
+        "lat": -33.4569
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 22.71,
-        "feels_like": 23.18,
-        "temp_min": 21.23,
-        "temp_max": 23.18,
-        "pressure": 1018,
-        "humidity": 82,
-        "sea_level": 1018,
-        "grnd_level": 823
+        "temp": 20.12,
+        "feels_like": 19.78,
+        "temp_min": 19.69,
+        "temp_max": 20.23,
+        "pressure": 1014,
+        "humidity": 61,
+        "sea_level": 1014,
+        "grnd_level": 928
     },
     "visibility": 10000,
     "wind": {
-        "speed": 0.48,
-        "deg": 137,
-        "gust": 0.99
+        "speed": 1.51,
+        "deg": 233,
+        "gust": 1.56
     },
     "clouds": {
-        "all": 6
+        "all": 91
     },
-    "dt": 1711632346,
+    "dt": 1773039780,
     "sys": {
         "type": 2,
-        "id": 2007848,
-        "country": "CR",
-        "sunrise": 1711625659,
-        "sunset": 1711669536
+        "id": 2094385,
+        "country": "CL",
+        "sunrise": 1773052647,
+        "sunset": 1773097742
     },
-    "timezone": -21600,
-    "id": 3622914,
-    "name": "Mata de Guineo",
+    "timezone": -10800,
+    "id": 3871336,
+    "name": "Santiago",
     "cod": 200
 }

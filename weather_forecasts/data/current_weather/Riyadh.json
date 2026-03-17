@@ -1,46 +1,44 @@
 {
     "coord": {
-        "lon": 46.716,
-        "lat": 24.6389
+        "lon": 46.7219,
+        "lat": 24.6877
     },
     "weather": [
         {
-            "id": 801,
-            "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 28.21,
-        "feels_like": 26.8,
-        "temp_min": 28.21,
-        "temp_max": 28.21,
-        "pressure": 1016,
-        "humidity": 15,
-        "sea_level": 1016,
-        "grnd_level": 945
+        "temp": 19.61,
+        "feels_like": 18.38,
+        "temp_min": 19.61,
+        "temp_max": 19.61,
+        "pressure": 1017,
+        "humidity": 29,
+        "sea_level": 1017,
+        "grnd_level": 944
     },
     "visibility": 10000,
     "wind": {
-        "speed": 5.51,
-        "deg": 352,
-        "gust": 5.52
+        "speed": 5.68,
+        "deg": 60,
+        "gust": 5.66
     },
     "clouds": {
-        "all": 12
+        "all": 5
     },
-    "dt": 1711632344,
+    "dt": 1773039473,
     "sys": {
-        "type": 1,
-        "id": 7424,
         "country": "SA",
-        "sunrise": 1711594119,
-        "sunset": 1711638443
+        "sunrise": 1773025717,
+        "sunset": 1773068345
     },
     "timezone": 10800,
-    "id": 448600,
-    "name": "Al Kh\u0101lid\u012byah",
+    "id": 108410,
+    "name": "Riyadh",
     "cod": 200
 }

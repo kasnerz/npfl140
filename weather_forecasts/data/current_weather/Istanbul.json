@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": 28.9759,
-        "lat": 41.0064
+        "lon": 28.9833,
+        "lat": 41.0351
     },
     "weather": [
         {
@@ -13,31 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 20.22,
-        "feels_like": 19.37,
-        "temp_min": 19.76,
-        "temp_max": 25.29,
-        "pressure": 1012,
-        "humidity": 41
+        "temp": 7.36,
+        "feels_like": 3.17,
+        "temp_min": 6.04,
+        "temp_max": 7.68,
+        "pressure": 1031,
+        "humidity": 61,
+        "sea_level": 1031,
+        "grnd_level": 1023
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.09,
-        "deg": 260
+        "speed": 8.23,
+        "deg": 60
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1711632326,
+    "dt": 1773038940,
     "sys": {
         "type": 2,
-        "id": 2092591,
+        "id": 2000954,
         "country": "TR",
-        "sunrise": 1711598020,
-        "sunset": 1711643056
+        "sunrise": 1773030377,
+        "sunset": 1773072198
     },
     "timezone": 10800,
-    "id": 738354,
-    "name": "Karak\u00f6y",
+    "id": 745042,
+    "name": "Istanbul",
     "cod": 200
 }

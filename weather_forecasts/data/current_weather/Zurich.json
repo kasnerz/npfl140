@@ -1,43 +1,46 @@
 {
     "coord": {
-        "lon": 8.541,
-        "lat": 47.3744
+        "lon": 8.55,
+        "lat": 47.3667
     },
     "weather": [
         {
-            "id": 802,
+            "id": 804,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "overcast clouds",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 10.5,
-        "feels_like": 9.28,
-        "temp_min": 8.94,
-        "temp_max": 13,
-        "pressure": 998,
-        "humidity": 64
+        "temp": 7.64,
+        "feels_like": 7.64,
+        "temp_min": 4.82,
+        "temp_max": 9.23,
+        "pressure": 1023,
+        "humidity": 83,
+        "sea_level": 1023,
+        "grnd_level": 964
     },
-    "visibility": 10000,
+    "visibility": 8000,
     "wind": {
-        "speed": 4.12,
-        "deg": 240
+        "speed": 0.89,
+        "deg": 130,
+        "gust": 2.68
     },
     "clouds": {
-        "all": 40
+        "all": 100
     },
-    "dt": 1711632098,
+    "dt": 1773039415,
     "sys": {
         "type": 2,
-        "id": 2019255,
+        "id": 2003379,
         "country": "CH",
-        "sunrise": 1711602723,
-        "sunset": 1711648159
+        "sunrise": 1773035481,
+        "sunset": 1773076900
     },
     "timezone": 3600,
-    "id": 6295546,
-    "name": "Z\u00fcrich (Kreis 1)",
+    "id": 2657896,
+    "name": "Zurich",
     "cod": 200
 }

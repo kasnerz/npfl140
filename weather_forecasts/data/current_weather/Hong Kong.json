@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": 114.1849,
-        "lat": 22.3506
+        "lon": 114.1577,
+        "lat": 22.2855
     },
     "weather": [
         {
-            "id": 804,
+            "id": 802,
             "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04n"
+            "description": "scattered clouds",
+            "icon": "03d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 23.24,
-        "feels_like": 23.89,
-        "temp_min": 22.41,
-        "temp_max": 23.82,
-        "pressure": 1014,
-        "humidity": 87
+        "temp": 21.82,
+        "feels_like": 21.91,
+        "temp_min": 21.64,
+        "temp_max": 22.96,
+        "pressure": 1020,
+        "humidity": 71,
+        "sea_level": 1020,
+        "grnd_level": 1015
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.24,
-        "deg": 220
+        "speed": 4.02,
+        "deg": 270
     },
     "clouds": {
-        "all": 100
+        "all": 27
     },
-    "dt": 1711632325,
+    "dt": 1773039633,
     "sys": {
         "type": 2,
         "id": 47808,
         "country": "HK",
-        "sunrise": 1711577977,
-        "sunset": 1711622208
+        "sunrise": 1773009492,
+        "sunset": 1773052207
     },
     "timezone": 28800,
-    "id": 1819273,
-    "name": "Nga Tsin Wai",
+    "id": 1819729,
+    "name": "Hong Kong",
     "cod": 200
 }

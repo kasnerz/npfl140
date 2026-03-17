@@ -1,40 +1,42 @@
 {
     "coord": {
-        "lon": 126.9783,
-        "lat": 37.5667
+        "lon": 126.9778,
+        "lat": 37.5683
     },
     "weather": [
         {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04n"
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 8.97,
-        "feels_like": 6.94,
-        "temp_min": 6.69,
-        "temp_max": 9.66,
-        "pressure": 1007,
-        "humidity": 87
+        "temp": 7.76,
+        "feels_like": 4.73,
+        "temp_min": 6.78,
+        "temp_max": 7.76,
+        "pressure": 1025,
+        "humidity": 39,
+        "sea_level": 1025,
+        "grnd_level": 1015
     },
-    "visibility": 9000,
+    "visibility": 10000,
     "wind": {
-        "speed": 3.6,
-        "deg": 280
+        "speed": 5.14,
+        "deg": 320
     },
     "clouds": {
-        "all": 75
+        "all": 0
     },
-    "dt": 1711632348,
+    "dt": 1773039310,
     "sys": {
         "type": 1,
         "id": 8105,
         "country": "KR",
-        "sunrise": 1711574612,
-        "sunset": 1711619433
+        "sunrise": 1773006784,
+        "sunset": 1773048762
     },
     "timezone": 32400,
     "id": 1835848,

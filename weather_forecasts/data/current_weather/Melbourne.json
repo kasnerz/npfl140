@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": 144.9632,
-        "lat": -37.8142
+        "lon": -80.6081,
+        "lat": 28.0836
     },
     "weather": [
         {
@@ -13,31 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 13.11,
-        "feels_like": 12.62,
-        "temp_min": 10.66,
-        "temp_max": 15.31,
-        "pressure": 1025,
-        "humidity": 82
+        "temp": 21.32,
+        "feels_like": 21.83,
+        "temp_min": 20.02,
+        "temp_max": 22.21,
+        "pressure": 1019,
+        "humidity": 89,
+        "sea_level": 1019,
+        "grnd_level": 1019
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.57,
-        "deg": 280
+        "speed": 1.54,
+        "deg": 210
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1711632334,
+    "dt": 1773039544,
     "sys": {
-        "type": 2,
-        "id": 2008797,
-        "country": "AU",
-        "sunrise": 1711657868,
-        "sunset": 1711700308
+        "type": 1,
+        "id": 4922,
+        "country": "US",
+        "sunrise": 1773056328,
+        "sunset": 1773098842
     },
-    "timezone": 39600,
-    "id": 2158177,
+    "timezone": -14400,
+    "id": 4163971,
     "name": "Melbourne",
     "cod": 200
 }

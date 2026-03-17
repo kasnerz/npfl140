@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": 34.7818,
-        "lat": 32.0853
+        "lon": 34.8,
+        "lat": 32.0833
     },
     "weather": [
         {
@@ -13,31 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 32.12,
-        "feels_like": 30.04,
-        "temp_min": 32.12,
-        "temp_max": 32.12,
-        "pressure": 1012,
-        "humidity": 19
+        "temp": 16.14,
+        "feels_like": 14.96,
+        "temp_min": 16.14,
+        "temp_max": 16.27,
+        "pressure": 1020,
+        "humidity": 44,
+        "sea_level": 1020,
+        "grnd_level": 1018
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.57,
-        "deg": 340
+        "speed": 1.03,
+        "deg": 0
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1711632355,
+    "dt": 1773039792,
     "sys": {
         "type": 1,
         "id": 6845,
         "country": "IL",
-        "sunrise": 1711596839,
-        "sunset": 1711641451
+        "sunrise": 1773028744,
+        "sunset": 1773071039
     },
     "timezone": 7200,
-    "id": 293397,
+    "id": 293396,
     "name": "Tel Aviv",
     "cod": 200
 }

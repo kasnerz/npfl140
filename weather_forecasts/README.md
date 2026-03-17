@@ -1,106 +1,89 @@
-# NPFL140 Hands-on Exercise: Generating Weather Reports 🌦️
+# Hands-on Exercise: Generating Weather Reports 🌦️
 
-Today, you will **generate weather reports** with LLMs. 
+In this task, you will **generate weather reports** from weather data using open LLMs. 
 
+You will have access to multiple open models running via API.
 
-You will have access to multiple open models running on our in-house cluster via API.
-
-As an input, the system will use the JSONs from [OpenWeather.org](https://openweathermap.org/api) and your custom prompt.
-
-**Overview of your goals:**
-
-1. Find a team.
-2. Run the sample code.
-3. Complete the tasks below.
-4. Describe your findings to your peers.
-
-**In this exercise, you should learn:**
-- How to write a basic Python code querying a LLM through an API.
-- How to set up a suitable prompt and parameters to get the expected output.
-- What are the opportunities and limits of recent open LLMs.
-
-Note that the exercise is pretty much open-ended. We expect you to be creative and think about your findings :wink:
+As an input, the system will use the JSONs pre-downloaded from [OpenWeather.org](https://openweathermap.org/api) and your custom prompt.
 
 ## How to start
 
-### Find a team
-It is strongly recommended that you do this assignment in a team **up to 5 people**. 
-You can work in your official assignment teams, or you can form new teams.
-
-If you do not have any teammates for some reason (for example, you have not participated in the class), you can also work on your own.
-
-### Run the code
-
-Clone or download this repository (`git clone https://github.com/kasnerz/npfl140`) and navigate to the subfolder `weather_forecasts`. Make sure you have Python 3 installed on your system.
+Clone or download the `npfl140` repository (`git clone https://github.com/kasnerz/npfl140`) and navigate to the subfolder `weather_forecasts`. Make sure you have Python 3 installed on your system.
 
 For starters, try running the code:
 ```
-pip3 install requests
-python3 sample.py --node 1
+pip install requests
+python sample.py --node 1
 ```
 
-The program should output a sample weather report from the model running on node 1 (see below for details):
+The program should output a weather report from the model running on node 1.
+
+Example output:
 > Amsterdam is experiencing a mild and cloudy day, with a temperature of 11.22°C, feeling like 10.17°C due to the moderate humidity of 68%. Scattered clouds fill the sky, with only a moderate amount of visibility impeded by the cloud cover. A gentle breeze blows from the northwest, bringing wind speeds of around 10.28 km/h and gusts of up to 13.41 km/h.
 
-The code is just an example: you can modify the code however you wish, move it to a Jupyter notebook, etc.
+The code is mainly for your reference: you can modify the it however you wish, move it to a Jupyter notebook, etc.
 
-If you have any issues with the code, please let us know: either in person (better) or by e-mail to *kasner (at) ufal.mff.cuni.cz*. You can also start an issue in this repository.
+> [!TIP]
+> To generate forecasts for more cities, remove the `break` at the end of the generation loop.
+
 
 ### Choose the data
 In the `data` subfolder, you can find pre-downloaded input data for 100* cities around the world. 
 
 We recommend that you choose a small subset of the cities (5-20 inputs)  for each task as your development set so that you can iterate quickly.
 
-**If you look carefully, you will notice there are actually just 98 cities. That's what happens if you ask ChatGPT to generate "a list of 100 cities"* :upside_down_face:
+> [!NOTE]
+> *If you look carefully, you will notice there are actually just 98 cities. That's what happens if you ask ChatGPT to generate "a list of 100 cities" :upside_down_face:
 
 
 ### Access the models
 
-You can access LLMs running on our cluster through the Ollama API at `http://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}/api`.
+You can access LLMs running on our cluster through the vLLM API at `https://quest.ms.mff.cuni.cz/nlg/text-generation-api-node{NODE}`.
 
-Currently running models: 
-| Node | Model                                  | Released     | Description                                                  |
-| ---- | -------------------------------------- | ------------ | ------------------------------------------------------------ |
-| 1    | [LLama 3.1 8B](https://ollama.com/library/llama3.1:8b)           | Jun 23, 2024 |  mid-size (8B), instruction-tuned   |
-| 2    | [Phi 3.5 3.8B](https://ollama.com/library/phi3.5:3.8b)           | Aug 16, 2024 |  small (3.8B), instruction-tuned    |
-| 3    | [Deepseek R1 14B](https://ollama.com/library/deepseek-r1:14b)    | Jan 21, 2025 |  mid-size (14B), reasoning          |
-| 4    | [Mistral 7B](https://ollama.com/library/mistral:7b-text)         | Sep 27, 2023 |  mid-size (7B), base                |
+Models:
+| Node | Description             |
+| ---- | ----------------------- |
+| 1    | Instruction-tuned model |
+| 2    | Instruction-tuned model |
+| 3    | Reasoning model         |
+| 4    | Base model              |
 
-> [!NOTE]
-> The maximum input context size for our models is 8,192 tokens. 
-Some models support larger context sizes: if you run Ollama yourself, you can modify the context window size with the [num_ctx](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values) parameter. However, please do not try it in the class as it could lead to reloading the model.
+All the models have maximum context length of 128,000 tokens.
 
-*Please, do not use the API for anything else than this assignment. The service will be stopped after the class.*
+> [!WARNING]
+> Please, do not use the API for anything else than this assignment. The service will be stopped after the class.
 
 ## Tasks
 
-Please enter your answers to tasks #1 - #4 in the following [shared Google doc](https://docs.google.com/document/d/1H4sPFBkC7umGo-zmV2rgsN9O-wMFT4kW1xuT9WDhN3Y/edit?usp=sharing).
-Make sure your answers can be identified (for example, you can use your team name).
+Please enter your answers to tasks #1 - #5 in the following [shared Google doc](https://docs.google.com/document/d/1PHBdSVHyNGwr59VRov-zwPtXmXPbWR5BWXV1uAVbHVM/edit?usp=sharing).
+Make sure your answers can be identified (using your names or team names as prefixes).
+
+### 🕵 **Bonus task:** Which models are we running?
+
+Can you reveal the "identity" of the models? Or can you at least guess their size / provider?
 
 ### ☀️ Task #1: Generate the current weather description
 Generate a **description of the current weather** based on a JSON file retrieved from the [**current weather API**](https://openweathermap.org/current). You do not need to retrieve the data yourself - you can find the input files in `data/current_weather`.
 
 **Questions**:
 
-- **1a)** Do the reports look the way you would expect? 
-- **1b)** How can you improve the results with a better prompt?
-- **1c)** How can you improve the results by varying decoding algorithms (beam search, top-k, top-p, ...) and their parameters?
-- **1d)** What differences between the models do you observe?
+- **1a)** Do you see issues with model outputs? If yes, how would you mitigate them?
+- **1b)** What differences between the models do you observe?
+- **1c)** Try varying decoding parameters (top-k, top-p, ...). How does it affect the output?
 
 ### 🌦️ Task #2: Generate a 5-day forecast
 
 Generate a **5-day forecast** based on a JSON file retrieved from the [**forecast API**](https://openweathermap.org/forecast5). You do not need to retrieve the data yourself - you can find the input files in `data/forecast`. 
 
-**Careful:** *the 5-day forecast inputs will be probably too large for the models and may get truncated. Keep an eye on the input size for each model. You can use the `--forecast_pruning_factor` parameter to reduce the data resolution (originally every 3 hours).*
+**Careful:** *the 5-day forecast inputs may be too long and get truncated. Make sure your input fits into the maximum context length. You can use the `--forecast-pruning-factor` parameter to reduce the data resolution (originally every 3 hours).*
 
 **Questions**:
 
-- **2a)** Which qualities would you expect the weather forecast to have (i.e., how should the generated text be evaluated)? 
-- **2b)** Do the generated reports have these qualities? If not, what are the issues?
-- **2c)** How does filtering data items or removing certain fields from the input data improve the output quality?
-- **2d)** Do the insights from 1b)-1d) apply for this task as well? 
+- **2a)** How would you evaluate the quality of model outputs?
+- **2b)** Can you maintain consistency of the forecast format?
+- **2c)** Do the insights from 1a-c) apply here as well?
 
-### 🇺🇳 BONUS Task #3: Generate a weather report in another language
+### 🇺🇳 Task #3: Generate a weather report in another language
 Use the data from task #1 or #2 and generate the reports in non-English language(s) of your choice.
 
 **Questions**:
@@ -109,7 +92,7 @@ Use the data from task #1 or #2 and generate the reports in non-English language
 - **3c)** What would be your method of choice for generating weather forecasts in this language in a practical scenario?
 
 
-### 🌈 BONUS Task #4: Generate stylized weather reports
+### 🌈 Task #4: Generate stylized weather reports
 Use the data from task #1 or #2 and generate the reports with a specific style of your choice (you can do more, but one is enough), for example:
 - bullet-point style weather reports,
 - one-sentence reports,
@@ -122,13 +105,14 @@ Use the data from task #1 or #2 and generate the reports with a specific style o
 - **4b)** Are the responses robustly following the style for every output? If not, can you make it more robust?
 - **4c)** Is there a difference in quality of the outputs compared to the default setup?
 
+
 ## Evaluation
 
 In this task, the evaluation is mainly qualitative. It may be helpful to log your setup and outputs so that you have a reference for your answers.
 
 You should also keep thinking about how would you evaluate the outputs in a more rigorous way (we will get to evaluation later!).
 
-Note that the weather data was **up-to-date for 28 March 2024**: for evaluation the accuracy of the forecasts, feel free to check https://openweathermap.org!
+Note that the weather data was **up-to-date for TODO**: for evaluation the accuracy of the forecasts, feel free to check https://openweathermap.org!
 
 ## Extra links
 - OpenWeather API docs: https://openweathermap.org/api/

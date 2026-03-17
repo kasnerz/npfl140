@@ -1,44 +1,46 @@
 {
     "coord": {
-        "lon": -79.3839,
-        "lat": 43.6535
+        "lon": -79.4163,
+        "lat": 43.7001
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "clear sky",
-            "icon": "01d"
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 2.94,
-        "feels_like": -1.04,
-        "temp_min": 1.8,
-        "temp_max": 4.09,
-        "pressure": 1019,
-        "humidity": 57
+        "temp": 7.73,
+        "feels_like": 3.14,
+        "temp_min": 6.39,
+        "temp_max": 9.12,
+        "pressure": 1010,
+        "humidity": 65,
+        "sea_level": 1010,
+        "grnd_level": 993
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.63,
+        "speed": 10.28,
         "deg": 230,
-        "gust": 7.72
+        "gust": 0
     },
     "clouds": {
-        "all": 0
+        "all": 75
     },
-    "dt": 1711632356,
+    "dt": 1773039731,
     "sys": {
-        "type": 1,
-        "id": 718,
+        "type": 2,
+        "id": 2099289,
         "country": "CA",
-        "sunrise": 1711623918,
-        "sunset": 1711669159
+        "sunrise": 1773056443,
+        "sunset": 1773098154
     },
     "timezone": -14400,
-    "id": 6167863,
-    "name": "Downtown Toronto",
+    "id": 6167865,
+    "name": "Toronto",
     "cod": 200
 }

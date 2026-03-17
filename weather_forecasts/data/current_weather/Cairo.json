@@ -1,43 +1,45 @@
 {
     "coord": {
-        "lon": 31.2357,
-        "lat": 30.0444
+        "lon": 31.2497,
+        "lat": 30.0626
     },
     "weather": [
         {
-            "id": 804,
-            "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 32.33,
-        "feels_like": 30.05,
-        "temp_min": 31.81,
-        "temp_max": 32.33,
-        "pressure": 1014,
-        "humidity": 9
+        "temp": 15.42,
+        "feels_like": 14.09,
+        "temp_min": 15.23,
+        "temp_max": 15.42,
+        "pressure": 1021,
+        "humidity": 41,
+        "sea_level": 1021,
+        "grnd_level": 1015
     },
-    "visibility": 6000,
+    "visibility": 10000,
     "wind": {
-        "speed": 7.72,
-        "deg": 270
+        "speed": 5.66,
+        "deg": 70
     },
     "clouds": {
-        "all": 100
+        "all": 0
     },
-    "dt": 1711632313,
+    "dt": 1773039573,
     "sys": {
         "type": 1,
         "id": 2514,
         "country": "EG",
-        "sunrise": 1711597731,
-        "sunset": 1711642260
+        "sunrise": 1773029548,
+        "sunset": 1773071940
     },
     "timezone": 7200,
-    "id": 7922173,
-    "name": "Al \u2018Atabah",
+    "id": 360630,
+    "name": "Cairo",
     "cod": 200
 }
