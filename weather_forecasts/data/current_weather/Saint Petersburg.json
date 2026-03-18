@@ -8,35 +8,35 @@
             "id": 800,
             "main": "Clear",
             "description": "clear sky",
-            "icon": "01d"
+            "icon": "01n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 3.36,
-        "feels_like": -0.71,
-        "temp_min": 3.08,
-        "temp_max": 3.36,
-        "pressure": 1022,
-        "humidity": 86,
-        "sea_level": 1022,
-        "grnd_level": 1019
+        "temp": 2.81,
+        "feels_like": 0.82,
+        "temp_min": 1.08,
+        "temp_max": 2.81,
+        "pressure": 1028,
+        "humidity": 92,
+        "sea_level": 1028,
+        "grnd_level": 1026
     },
     "visibility": 10000,
     "wind": {
-        "speed": 5,
-        "deg": 260
+        "speed": 2,
+        "deg": 230
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1773039616,
+    "dt": 1773856706,
     "sys": {
         "type": 2,
         "id": 2045711,
         "country": "RU",
-        "sunrise": 1773030876,
-        "sunset": 1773071085
+        "sunrise": 1773806849,
+        "sunset": 1773850003
     },
     "timezone": 10800,
     "id": 498817,

@@ -5,39 +5,38 @@
     },
     "weather": [
         {
-            "id": 804,
+            "id": 803,
             "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04d"
+            "description": "broken clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 30.55,
-        "feels_like": 34.14,
-        "temp_min": 30.03,
-        "temp_max": 30.63,
-        "pressure": 1011,
-        "humidity": 61,
-        "sea_level": 1011,
-        "grnd_level": 1014
+        "temp": 25.95,
+        "feels_like": 25.95,
+        "temp_min": 25.59,
+        "temp_max": 27,
+        "pressure": 1012,
+        "humidity": 78,
+        "sea_level": 1012,
+        "grnd_level": 1015
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.47,
-        "deg": 22,
-        "gust": 7.6
+        "speed": 2.57,
+        "deg": 110
     },
     "clouds": {
-        "all": 100
+        "all": 75
     },
-    "dt": 1773039220,
+    "dt": 1773856409,
     "sys": {
         "type": 2,
         "id": 2008256,
         "country": "PH",
-        "sunrise": 1773007697,
-        "sunset": 1773050726
+        "sunrise": 1773871279,
+        "sunset": 1773914801
     },
     "timezone": 28800,
     "id": 1701668,

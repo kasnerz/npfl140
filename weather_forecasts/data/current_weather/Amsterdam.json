@@ -5,44 +5,38 @@
     },
     "weather": [
         {
-            "id": 741,
-            "main": "Fog",
-            "description": "fog",
-            "icon": "50d"
-        },
-        {
-            "id": 701,
-            "main": "Mist",
-            "description": "mist",
-            "icon": "50d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 3.87,
-        "feels_like": 3.87,
-        "temp_min": 2.95,
-        "temp_max": 4.44,
-        "pressure": 1020,
-        "humidity": 96,
-        "sea_level": 1020,
-        "grnd_level": 1021
+        "temp": 11.85,
+        "feels_like": 10.66,
+        "temp_min": 11.06,
+        "temp_max": 12.95,
+        "pressure": 1026,
+        "humidity": 60,
+        "sea_level": 1026,
+        "grnd_level": 1026
     },
-    "visibility": 150,
+    "visibility": 10000,
     "wind": {
-        "speed": 1.03,
-        "deg": 300
+        "speed": 3.6,
+        "deg": 100
     },
     "clouds": {
-        "all": 40
+        "all": 0
     },
-    "dt": 1773039306,
+    "dt": 1773855898,
     "sys": {
         "type": 2,
-        "id": 2012552,
+        "id": 2101578,
         "country": "NL",
-        "sunrise": 1773036557,
-        "sunset": 1773077581
+        "sunrise": 1773812895,
+        "sunset": 1773856134
     },
     "timezone": 3600,
     "id": 2759794,

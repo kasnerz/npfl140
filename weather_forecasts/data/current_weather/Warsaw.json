@@ -8,35 +8,35 @@
             "id": 800,
             "main": "Clear",
             "description": "clear sky",
-            "icon": "01d"
+            "icon": "01n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 4.04,
-        "feels_like": 1.7,
-        "temp_min": 3.13,
-        "temp_max": 5.46,
-        "pressure": 1030,
-        "humidity": 81,
-        "sea_level": 1030,
+        "temp": 10.79,
+        "feels_like": 9.52,
+        "temp_min": 9.26,
+        "temp_max": 12.13,
+        "pressure": 1029,
+        "humidity": 61,
+        "sea_level": 1029,
         "grnd_level": 1018
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.57,
-        "deg": 120
+        "speed": 3.09,
+        "deg": 30
     },
     "clouds": {
         "all": 0
     },
-    "dt": 1773039109,
+    "dt": 1773856130,
     "sys": {
         "type": 2,
         "id": 2032856,
         "country": "PL",
-        "sunrise": 1773032687,
-        "sunset": 1773073714
+        "sunrise": 1773809032,
+        "sunset": 1773852260
     },
     "timezone": 3600,
     "id": 756135,

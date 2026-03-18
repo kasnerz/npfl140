@@ -8,35 +8,35 @@
             "id": 803,
             "main": "Clouds",
             "description": "broken clouds",
-            "icon": "04d"
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 11.95,
-        "feels_like": 10.3,
-        "temp_min": 10.79,
-        "temp_max": 13.08,
-        "pressure": 1018,
-        "humidity": 42,
-        "sea_level": 1018,
-        "grnd_level": 1016
+        "temp": 13.26,
+        "feels_like": 12.81,
+        "temp_min": 11.81,
+        "temp_max": 14.23,
+        "pressure": 1006,
+        "humidity": 83,
+        "sea_level": 1006,
+        "grnd_level": 1004
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.6,
-        "deg": 130
+        "speed": 7.72,
+        "deg": 220
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1773039652,
+    "dt": 1773856642,
     "sys": {
         "type": 2,
         "id": 268395,
         "country": "JP",
-        "sunrise": 1773003685,
-        "sunset": 1773045760
+        "sunrise": 1773866833,
+        "sunset": 1773910269
     },
     "timezone": 32400,
     "id": 1850144,

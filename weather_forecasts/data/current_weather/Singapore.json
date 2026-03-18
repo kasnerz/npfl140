@@ -8,35 +8,35 @@
             "id": 803,
             "main": "Clouds",
             "description": "broken clouds",
-            "icon": "04d"
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 32.44,
-        "feels_like": 36.57,
-        "temp_min": 30.92,
-        "temp_max": 32.97,
-        "pressure": 1009,
-        "humidity": 55,
-        "sea_level": 1009,
-        "grnd_level": 1008
+        "temp": 27.11,
+        "feels_like": 30.5,
+        "temp_min": 25.92,
+        "temp_max": 27.74,
+        "pressure": 1011,
+        "humidity": 85,
+        "sea_level": 1011,
+        "grnd_level": 1010
     },
     "visibility": 10000,
     "wind": {
-        "speed": 6.17,
-        "deg": 10
+        "speed": 3.6,
+        "deg": 40
     },
     "clouds": {
         "all": 75
     },
-    "dt": 1773039020,
+    "dt": 1773856674,
     "sys": {
         "type": 1,
         "id": 9470,
         "country": "SG",
-        "sunrise": 1773011548,
-        "sunset": 1773055098
+        "sunrise": 1773875355,
+        "sunset": 1773918946
     },
     "timezone": 28800,
     "id": 1880252,

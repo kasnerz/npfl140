@@ -5,47 +5,38 @@
     },
     "weather": [
         {
-            "id": 300,
-            "main": "Drizzle",
-            "description": "light intensity drizzle",
-            "icon": "09d"
-        },
-        {
-            "id": 500,
-            "main": "Rain",
-            "description": "light rain",
-            "icon": "10d"
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 15.66,
-        "feels_like": 15.27,
-        "temp_min": 13.92,
-        "temp_max": 15.93,
-        "pressure": 1023,
-        "humidity": 76,
-        "sea_level": 1023,
-        "grnd_level": 1003
+        "temp": 19.8,
+        "feels_like": 19.85,
+        "temp_min": 18.93,
+        "temp_max": 21.14,
+        "pressure": 1015,
+        "humidity": 77,
+        "sea_level": 1015,
+        "grnd_level": 995
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.63,
-        "deg": 90
-    },
-    "rain": {
-        "1h": 0.15
+        "speed": 1.54,
+        "deg": 110
     },
     "clouds": {
-        "all": 75
+        "all": 20
     },
-    "dt": 1773039791,
+    "dt": 1773856755,
     "sys": {
         "type": 2,
         "id": 266033,
         "country": "TW",
-        "sunrise": 1773007783,
-        "sunset": 1773050377
+        "sunrise": 1773871169,
+        "sunset": 1773914647
     },
     "timezone": 28800,
     "id": 1668341,

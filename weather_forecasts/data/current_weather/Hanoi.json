@@ -5,39 +5,39 @@
     },
     "weather": [
         {
-            "id": 804,
+            "id": 801,
             "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04d"
+            "description": "few clouds",
+            "icon": "02n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 21,
-        "feels_like": 21.32,
-        "temp_min": 21,
-        "temp_max": 21,
-        "pressure": 1021,
-        "humidity": 83,
-        "sea_level": 1021,
-        "grnd_level": 1020
+        "temp": 23,
+        "feels_like": 23.71,
+        "temp_min": 23,
+        "temp_max": 23,
+        "pressure": 1013,
+        "humidity": 90,
+        "sea_level": 1013,
+        "grnd_level": 1012
     },
-    "visibility": 7774,
+    "visibility": 10000,
     "wind": {
-        "speed": 8.44,
-        "deg": 29,
-        "gust": 10.99
+        "speed": 2.69,
+        "deg": 121,
+        "gust": 6.07
     },
     "clouds": {
-        "all": 100
+        "all": 15
     },
-    "dt": 1773039633,
+    "dt": 1773856694,
     "sys": {
         "type": 1,
         "id": 9308,
         "country": "VN",
-        "sunrise": 1773011460,
-        "sunset": 1773054230
+        "sunrise": 1773874924,
+        "sunset": 1773918422
     },
     "timezone": 25200,
     "id": 1581130,

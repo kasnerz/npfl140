@@ -5,39 +5,38 @@
     },
     "weather": [
         {
-            "id": 804,
-            "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04n"
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 13.8,
-        "feels_like": 13.48,
-        "temp_min": 13.03,
-        "temp_max": 13.92,
-        "pressure": 1015,
-        "humidity": 86,
-        "sea_level": 1015,
-        "grnd_level": 736
+        "temp": 12.92,
+        "feels_like": 12.8,
+        "temp_min": 12.31,
+        "temp_max": 14.73,
+        "pressure": 1017,
+        "humidity": 97,
+        "sea_level": 1017,
+        "grnd_level": 738
     },
     "visibility": 10000,
     "wind": {
-        "speed": 0.54,
-        "deg": 34,
-        "gust": 0.55
+        "speed": 2.57,
+        "deg": 300
     },
     "clouds": {
-        "all": 100
+        "all": 75
     },
-    "dt": 1773039570,
+    "dt": 1773856438,
     "sys": {
         "type": 2,
         "id": 2105380,
         "country": "CO",
-        "sunrise": 1773054304,
-        "sunset": 1773097733
+        "sunrise": 1773831681,
+        "sunset": 1773875246
     },
     "timezone": -18000,
     "id": 3688689,

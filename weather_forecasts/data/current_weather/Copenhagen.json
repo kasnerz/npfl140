@@ -5,38 +5,38 @@
     },
     "weather": [
         {
-            "id": 804,
+            "id": 803,
             "main": "Clouds",
-            "description": "overcast clouds",
-            "icon": "04d"
+            "description": "broken clouds",
+            "icon": "04n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 4.24,
-        "feels_like": 1.17,
-        "temp_min": 3.19,
-        "temp_max": 4.52,
-        "pressure": 1024,
-        "humidity": 79,
-        "sea_level": 1024,
-        "grnd_level": 1022
+        "temp": 5.78,
+        "feels_like": 2.75,
+        "temp_min": 5.64,
+        "temp_max": 6.19,
+        "pressure": 1030,
+        "humidity": 70,
+        "sea_level": 1030,
+        "grnd_level": 1029
     },
     "visibility": 10000,
     "wind": {
-        "speed": 3.6,
-        "deg": 140
+        "speed": 4.12,
+        "deg": 170
     },
     "clouds": {
-        "all": 100
+        "all": 82
     },
-    "dt": 1773039262,
+    "dt": 1773856247,
     "sys": {
         "type": 2,
         "id": 2035645,
         "country": "DK",
-        "sunrise": 1773034873,
-        "sunset": 1773075581
+        "sunrise": 1773811069,
+        "sunset": 1773854277
     },
     "timezone": 3600,
     "id": 2618425,
