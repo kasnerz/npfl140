@@ -2,14 +2,30 @@
 
 import argparse
 
+from langcodes import Language, tag_is_valid
 import requests
+from rich.console import Console
+from rich.panel import Panel
+from rich import print as rprint
 
+console = Console()
 
-API_KEY = "PUtoW1ynfiZqv7C9"
+# TODO: Fill the API key according to the instructions.
+API_KEY = "npfl140" 
 
-# This is exhaustive list of Tower of ALMA_R tuning languages. This needs to be extended for future.
-CODE_TO_LANGUAGE = {'en': 'English', 'de': 'German', 'fr': 'French', 'es': 'Spanish', 'it': 'Italian', 'nl': 'Dutch',
-                    'pt': 'Portuguese', 'ru': 'Russian', 'zh': 'Chinese', 'cs': 'Czech', 'is': 'Icelandic'}
+if not API_KEY:
+    raise ValueError("API key is not set. Please fill the API_KEY according to the instructions.")
+
+def language_name_from_code(code):
+    normalized_code = code.strip().lower()
+    if not tag_is_valid(normalized_code):
+        raise ValueError(f"Unknown language code: {code}. Check if the language is supported.")
+
+    language_name = Language.get(normalized_code).display_name("en")
+    if not language_name or language_name.lower() == normalized_code:
+        raise ValueError(f"Unknown language code: {code}. Check if the language is supported.")
+
+    return language_name
 
 
 def model_api(node, model_args, prompt):
@@ -48,23 +64,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
     # fmt: on
 
-    if args.src_lang not in CODE_TO_LANGUAGE:
-        raise ValueError(f"Unknown source language code: {args.src_lang}. Extending list could be enough. Check if the language is supported.")
-    if args.tgt_lang not in CODE_TO_LANGUAGE:
-        raise ValueError(f"Unknown target language code: {args.tgt_lang}. Extending list could be enough. Check if the language is supported.")
+    src_lang = language_name_from_code(args.src_lang)
+    tgt_lang = language_name_from_code(args.tgt_lang)
+    prompt = f"Translate the following from {src_lang} to {tgt_lang}:\n\n{args.src_text}"
 
-    src_lang = CODE_TO_LANGUAGE[args.src_lang]
-    tgt_lang = CODE_TO_LANGUAGE[args.tgt_lang]
-    prompt = f"{src_lang}: {args.src_text} {tgt_lang}: "
-
-    print("[prompt]")
-    print(prompt)
-
-    print(f"[info]")
-    print(f"Words: {len(prompt.split())}, Characters: {len(prompt)}")
-
-    print()
-    print("[output]")
+    console.print(Panel(prompt, title="[bold cyan]Prompt[/bold cyan]", border_style="cyan"))
+    console.print(f"[bold yellow]Words:[/bold yellow] {len(prompt.split())}  [bold yellow]Characters:[/bold yellow] {len(prompt)}")
+    console.print()
 
     model_args = {
         "max_tokens": args.max_tokens,
@@ -74,6 +80,6 @@ if __name__ == "__main__":
     }
 
     output_text = model_api(node=args.node, model_args=model_args, prompt=prompt)
-    print(output_text)
+    console.print(Panel(output_text, title="[bold green]Output[/bold green]", border_style="green"))
 
     # remove to generate output for all samples
