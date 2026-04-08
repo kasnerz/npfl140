@@ -11,7 +11,7 @@ from rich import print as rprint
 console = Console()
 
 # TODO: Fill the API key according to the instructions.
-API_KEY = "npfl140" 
+API_KEY = None
 
 if not API_KEY:
     raise ValueError("API key is not set. Please fill the API_KEY according to the instructions.")
